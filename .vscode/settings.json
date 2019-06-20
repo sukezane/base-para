@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ],
+    "editor.formatOnPaste": false,
+    "emmet.includeLanguages": {
+        "vue": "html",
+        "vue": "css",
+    },
+}
