@@ -1,4 +1,7 @@
 body.shop {
+    .wrapper {
+        margin: 0 auto;
+    }
     .wrapper, .part4 {
         width: 1200px;
     }
@@ -7,7 +10,7 @@ body.shop {
         justify-content: space-between;
         h1 {
             text-align: left;
-            margin: 23px 0 15.8px;
+            margin: 13px 0 5.8px;
         }
         nav {
             align-self: center;
