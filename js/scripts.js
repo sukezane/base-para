@@ -8,9 +8,6 @@ new Swiper('#swiper-top', {
     },
     paginationClickable: true,
     pagination: {
-        el: '.p-slide-pagination',
-        bulletClass: 'p-slide-pagination__bullet',
-        bulletActiveClass: 'p-slide-pagination__bullet--active',
         clickable: true
     }
 });
