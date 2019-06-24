@@ -1,1 +1,5 @@
-body {}
+body.shop {
+    .wrapper, .part4 {
+        width: 1200px;
+    }
+}
