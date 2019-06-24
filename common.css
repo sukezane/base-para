@@ -12,3 +12,7 @@ body.shop #shopHeader nav {
     font-family:"Overpass";
     font-size:24px;
 }
+
+body.shop #shopHeader nav ul li:hover {
+    border-bottom:0;
+}
