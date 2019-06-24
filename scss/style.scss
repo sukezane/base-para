@@ -49,7 +49,7 @@ body.shop {
 .swiper-pagination-bullet {
     display:block;
     opacity: 1;
-    background: #FFFFFF;
+    background: #fff;
     border: 1px solid #383636;
     width: 14px;
     height: 14px;
@@ -76,7 +76,26 @@ body.shop {
     justify-content: space-between;
 }
 
-.tp-News_ListWrapper {
+.tp-News_ListContainer {
     flex-grow: 1;
     background: #D53829;
+}
+
+.tp-News_ListWrapper {
+    padding: 43px 20px 0 30px;
+}
+
+.tp-News_Date {
+    font-family: "Overpass";
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.tp-News_Title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: underline;
 }
