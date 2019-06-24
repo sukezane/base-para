@@ -8,6 +8,7 @@ new Swiper('#swiper-top', {
     },
     paginationClickable: true,
     pagination: {
+        el: '.swiper-pagination',
         clickable: true
     }
 });
