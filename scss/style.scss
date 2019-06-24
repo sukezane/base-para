@@ -34,14 +34,15 @@ body.shop {
     }
 }
 
-#baseMenu .base img {
+#baseMenu img {
     height: 30px;
 }
 
 
 // swiper
 #swiper-top {
-    width: 653px;
+    width: 656px;
+    border: 3px solid #D53829;
     display: inline-block;
 }
 
@@ -60,13 +61,13 @@ body.shop {
 
 .swiper-container-horizontal>.swiper-pagination-bullets {
     width: initial;
-    top: 34%;
+    bottom: 3px;
     right: 0;
     bottom: inherit;
     left: inherit;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 5px;
+    margin: 10px;
 }
 
