@@ -1,3 +1,8 @@
 body.shop .wrapper, body.shop .part4 {
     width: 1200px;
 }
+
+body.shop #shopHeader h1 {
+    text-align: left;
+    margin: 23px 0 15.8px;
+}
