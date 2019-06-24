@@ -1,4 +1,4 @@
-// custom default styles
+// override default styles
 body.shop {
     .wrapper {
         margin: 0 auto;
@@ -70,3 +70,13 @@ body.shop {
     margin: 10px;
 }
 
+// custom css
+.tp-News {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tp-News_ListWrapper {
+    flex-grow: 1;
+    background: #D53829;
+}
