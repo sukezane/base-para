@@ -6,3 +6,9 @@ body.shop #shopHeader h1 {
     text-align: left;
     margin: 23px 0 15.8px;
 }
+
+body.shop #shopHeader nav {
+    border:0;
+    font-family:"Overpass";
+    font-size:24px;
+}
