@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* ===========================
+   Base
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700');
+/* Windows 用 Medium 指定の游ゴシック */
+
+@font-face {
+    font-family: "Yu Gothic M";
+    src: local("Yu Gothic Medium");
+}
+
+/* font-weight: bold の時は通常どおり Bold 書体を使わせる */
+
+@font-face {
+    font-family: "Yu Gothic M";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+}
+
+html,
+body {
+    @include _mq-up() {
+        min-width: 1200px;
+    }
+}
+
+html,
+body,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    /* ゴシック体指定 */
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", HelveticaNeue, "Segoe UI", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+html,
+body,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+ol {
+    // font-feature-settings: "palt";
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+p {
+    color: #383838;
+    margin: auto;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ol,
+ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+
+/**
+ * フルードイメージにします。
+ */
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+/**
+ * IEでSVGがフルードイメージにならない不具合があります。
+ * 属性値が`.svg`で終わる要素に適応します。
+ */
+
+[src$=".svg"],
+[data$=".svg"] {
+    width: 100%;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @include _on-event() {
+        text-decoration: none;
+    }
+}
+
+div {
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    @include _on-event() {
+        -webkit-tap-highlight-color: transparent;
+        outline: 0;
+    }
+}
+
+[v-cloak] {
+    display: none;
+  }
+  

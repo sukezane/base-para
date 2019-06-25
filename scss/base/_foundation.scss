@@ -1,0 +1,53 @@
+/* =============================================================================
+   #Foundation
+ * base...サイトの基本的なセッティングを記載します。
+
+ * VARIABLE
+ * breakpoint...メディアクエリで使用するブレイクポイントです。
+ * z-index...z-indexの並び順を管理します。
+ * easing...cubic-bezier関数を使用したタイミング関数を定義しています。
+ * margin...marginのmixinで作成するmarginの範囲を定義します。
+ * padding...paddingのmixinで作成するpaddingの範囲を定義します。
+ * font-size...font-sizeのmixinで作成するfont-sizeの範囲を定義します。
+ * percent...percentの関数で作成するwidthのpercentの範囲を定義します。
+ *
+ * FUNCTION
+ * em...pxをemに変換します。
+ * rem...pxをremに変換します。
+ * vw...pxをvwに変換します。
+ * z-index...z-indexの並び順を管理します。
+ *
+ * MIXIN
+ * mq-up...メディアクエリを`min-width`で挿入します。
+ * mq-down...メディアクエリを`max-width`で挿入します。
+ * responsive...レスポンシブ対応クラスを生成します。
+ * clearfix...floatの解除をします。
+ * on-event...:hover, :active, :focusをまとめて指定します。
+ * margin...marginを定義するclassを作成します。
+ * padding...paddingを定義するclassを作成します。
+ * object-fit...画像をトリミングするCSSをIE対応で適用します。
+   ========================================================================== */
+
+@import "variable/_breakpoint";
+@import "variable/_z-index";
+@import "variable/_easing";
+@import "variable/_gradient";
+@import "variable/_margin";
+@import "variable/_padding";
+@import "variable/_font-size";
+@import "variable/_percent";
+@import "function/_em";
+@import "function/_rem";
+@import "function/_vw";
+@import "function/_z-index";
+@import "mixin/_mq-up";
+@import "mixin/_mq-down";
+@import "mixin/_responsive";
+@import "mixin/_clearfix";
+@import "mixin/_on-event";
+@import "mixin/_margin";
+@import "mixin/_padding";
+@import "mixin/_placeholder";
+@import "mixin/_object-fit";
+@import "normalize";
+@import "base";

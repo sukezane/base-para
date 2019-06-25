@@ -1,0 +1,62 @@
+// @param $value - Utilityレイヤーのpaddingを作成します。
+// .u-pt1, .u-pt1vw, .u-pt1-down, .u-pt1vw-down等レスポンシブ、min-width,max-widthに対応した汎用的なクラス作成
+// max-widthで作成する場合はセレクタ及び@mixin名にdownと明示します。
+@mixin _padding_top($value) {
+    @include _responsive(".u-pt#{$value}") {
+        padding-top: #{$value}px !important;
+    }
+}
+
+@mixin _padding_top_vw_down($value) {
+    @include _responsive_down(".u-pt#{$value}vw-down") {
+        padding-top: _get_vw($value) !important;
+    }
+}
+
+@mixin _padding_right($value) {
+    @include _responsive(".u-pr#{$value}") {
+        padding-right: #{$value}px !important;
+    }
+}
+
+@mixin _padding_right_vw_down($value) {
+    @include _responsive_down(".u-pr#{$value}vw-down") {
+        padding-right: _get_vw($value) !important;
+    }
+}
+
+@mixin _padding_bottom($value) {
+    @include _responsive(".u-pb#{$value}") {
+        padding-bottom: #{$value}px !important;
+    }
+}
+
+@mixin _padding_bottom_vw_down($value) {
+    @include _responsive_down(".u-pb#{$value}vw-down") {
+        padding-bottom: _get_vw($value) !important;
+    }
+}
+
+@mixin _padding_left($value) {
+    @include _responsive(".u-pl#{$value}") {
+        padding-left: #{$value}px !important;
+    }
+}
+
+@mixin _padding_left_vw_down($value) {
+    @include _responsive_down(".u-pl#{$value}vw-down") {
+        padding-left: _get_vw($value) !important;
+    }
+}
+
+@mixin _padding($value) {
+    @include _responsive(".u-p#{$value}") {
+        padding: #{$value}px !important;
+    }
+}
+
+@mixin _padding_vw_down($value) {
+    @include _responsive_down(".u-p#{$value}vw-down") {
+        padding: _get_vw($value) !important;
+    }
+}

@@ -1,0 +1,62 @@
+// @param $value - Utilityレイヤーのmarginを作成します。
+// .u-mt1, .u-mt1vw, .u-mt1-down, .u-mt1vw-down等レスポンシブ、min-width,max-widthに対応した汎用的なクラス作成
+// max-widthで作成する場合はセレクタ及び@mixin名にdownと明示します。
+@mixin _margin_top($value) {
+    @include _responsive(".u-mt#{$value}") {
+        margin-top: #{$value}px !important;
+    }
+}
+
+@mixin _margin_top_vw_down($value) {
+    @include _responsive_down(".u-mt#{$value}vw-down") {
+        margin-top: _get_vw($value) !important;
+    }
+}
+
+@mixin _margin_right($value) {
+    @include _responsive(".u-mr#{$value}") {
+        margin-right: #{$value}px !important;
+    }
+}
+
+@mixin _margin_right_vw_down($value) {
+    @include _responsive_down(".u-mr#{$value}vw-down") {
+        margin-right: _get_vw($value) !important;
+    }
+}
+
+@mixin _margin_bottom($value) {
+    @include _responsive(".u-mb#{$value}") {
+        margin-bottom: #{$value}px !important;
+    }
+}
+
+@mixin _margin_bottom_vw_down($value) {
+    @include _responsive_down(".u-mb#{$value}vw-down") {
+        margin-bottom: _get_vw($value) !important;
+    }
+}
+
+@mixin _margin_left($value) {
+    @include _responsive(".u-ml#{$value}") {
+        margin-left: #{$value}px !important;
+    }
+}
+
+@mixin _margin_left_vw_down($value) {
+    @include _responsive_down(".u-ml#{$value}vw-down") {
+        margin-left: _get_vw($value) !important;
+    }
+}
+
+@mixin _margin($value) {
+    @include _responsive(".u-m#{$value}") {
+        margin: #{$value}px !important;
+    }
+}
+
+@mixin _margin_vw_down($value) {
+    @include _responsive_down(".u-m#{$value}vw-down") {
+        margin: _get_vw($value) !important;
+    }
+}

@@ -1,0 +1,4 @@
+@mixin _object-fit($option:cover){
+    object-fit: $option;
+    font-family: 'object-fit: contain;';
+}
