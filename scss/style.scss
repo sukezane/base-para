@@ -8,10 +8,28 @@ body.shop {
     .part4 {
         .part {
             height: _get_vw(205);
-            margin: 0 _get_vw(15) _get_vw(30);
             width: _get_vw(165);
+            margin: 0 _get_vw(15) _get_vw(30);
+            @include _mq-up(){
+                margin: 0 13px;
+                height: 345px;
+                width: 280px;
+            }
+            &:first-child {
+                @include _mq-up(){
+                    margin: 0 13px 0 0;
+                }
+            }
+            &:last-child {
+                @include _mq-up(){
+                    margin: 0 0 0 13px;
+                }
+            }
             &:nth-child(even) {
                 margin: 0 _get_vw(15) _get_vw(30) 0;
+                @include _mq-up(){
+                    margin: 0;
+                }
             }
         }
     }
@@ -73,15 +91,25 @@ body.shop {
                 border-bottom: _get_vw(1) solid #D53829;
                 display: inline-block;
                 width: 100%;
+                @include _mq-up() {
+                    border-top: 1px solid #D53829;
+                    border-bottom: 1px solid #D53829;
+                }
             }
             li {
                 margin: _get_vw(14) _get_vw(40) _get_vw(14) 0;
+                @include _mq-up(){
+                    margin: 30px 36px 30px 8px;
+                }
                 a{
                     color: #D53829;
                     font-size: _get_vw(12);
                     font-weight: 600;
                     &:hover {
                         border-bottom: 0;
+                    }
+                    @include _mq-up(){
+                        font-size: 20px;
                     }
                 }
             }
@@ -107,6 +135,9 @@ body#shopTopPage .item {
                 margin: 0;
                 width: auto;
                 text-align: left;
+                @include _mq-up(){
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -116,6 +147,9 @@ body#shopTopPage .item {
         font-size: _get_vw(14);
         color: #D53829;
         text-align: left;
+        @include _mq-up() {
+            font-size: 20px;
+        }
     }
     .itemImg {
         padding: 0;
@@ -131,6 +165,11 @@ body#shopTopPage .item {
             height: _get_vw(165);
             object-fit: cover;
             border: _get_vw(2) solid #D53829;
+            @include _mq-up() {
+                width: 280px;
+                height: 280px;
+                border: 3px solid #D53829;
+            }
         }
     }
 }

@@ -9,6 +9,10 @@
     color: #D53829;
     text-align: center;
     padding: _get_vw(40) 0 _get_vw(20) 0;
+    @include _mq-up(){
+        font-size: 40px;
+        padding: 60px 0 36px 0;
+    }
 }
 
 .sw-Product_NewIcon {
