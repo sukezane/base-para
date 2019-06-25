@@ -76,9 +76,6 @@ body.shop {
             }
             li {
                 margin: _get_vw(14) _get_vw(40) _get_vw(14) 0;
-                &:last-child{
-                    margin: _get_vw(22) 0;
-                }
                 a{
                     color: #D53829;
                     font-size: _get_vw(12);
