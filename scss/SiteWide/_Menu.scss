@@ -1,0 +1,16 @@
+.sw-Menu {
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    background: #D53829;
+    border: none;
+    outline: 0;
+    color: #fff;
+    font-size: _get_vw(16);
+    font-weight: 400;
+    height: _get_vw(47);
+    width: 100%;
+    &:after {
+
+    }
+}
