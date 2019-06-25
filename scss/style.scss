@@ -9,7 +9,6 @@ body.shop {
             height: _get_vw(205);
             margin: 0 _get_vw(15) _get_vw(30);
             width: _get_vw(165);
-
         }
     }
     .wrapper {
@@ -46,12 +45,12 @@ body.shop {
             font-family:"Overpass";
             font-size:24px;
             display: none;
-            @include _mq-up(){
+            @include _mq-up() {
                 display: block;
             }
             ul {
                 text-align: right;
-                li{
+                li {
                     margin: 0;
                     &:nth-child(2) {
                         margin: 0 36px 0 47px;
@@ -65,8 +64,23 @@ body.shop {
     }
 }
 
-body#shopTopPage .item{
+body#shopTopPage .item {
     padding: 0;
+    &:hover {
+        .itemImg {
+            border: 0;
+        }
+    }
+    .itemImg {
+        height: auto;
+        position: relative;
+        .img {
+            width: _get_vw(165);
+            height: _get_vw(165);
+            object-fit: cover;
+            border: _get_vw(2) solid #D53829;
+        }
+    }
 }
 
 #baseMenu {

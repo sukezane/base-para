@@ -11,6 +11,15 @@
     padding: _get_vw(40) 0 0 0;
 }
 
-.sw-Product_Icon {
-
+.sw-Product_NewIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #D53829;
+    font-size: _get_vw(12);
+    font-weight: 600;
+    font-family: "Overpass";
+    width: _get_vw(33);
+    height: _get_vw(17);
 }
