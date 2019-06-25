@@ -68,7 +68,7 @@ body.shop {
 
 // swiper
 #swiper-top {
-    border: _get_vw(3) solid #D53829;
+    border: _get_vw(2) solid #D53829;
     display: inline-block;
     @include _mq-up(){
         width: 656px;

@@ -12,15 +12,23 @@
 .tp-News_ListContainer {
     flex-grow: 1;
     max-width: 545px;
-    background: #D53829;
+    @include _mq-up(){
+        background: #D53829;
+    }
 }
 
 .tp-News_ListWrapper {
-    padding: 20px 20px 0 30px;
+    padding: _get_vw(15) 0;
+    @include _mq-up(){
+        padding: 20px 20px 0 30px;
+    }
 }
 
 .tp-News_List {
-    margin-top: 30px;
+    margin-top: _get_vw(18);
+    @include _mq-up(){
+        margin-top: 30px;
+    }
     &:first-child {
         margin-top: 0;
     }
@@ -29,25 +37,36 @@
 .tp-News_Date {
     font-family: "Overpass";
     font-weight: 600;
-    font-size: 22px;
-    color: #fff;
-    opacity: 0.3;
+    font-size: _get_vw(10);
+    color: #BEBEBE;
+    @include _mq-up() {
+        font-size: 22px;
+        color: #fff;
+        opacity: 0.3;
+    }
 }
 
 .tp-News_Title {
     font-weight: 600;
-    font-size: 22px;
-    color: #fff;
+    font-size: _get_vw(12);
+    color: #6A6A6A;
     display: box;
     display: -webkit-box;
+    height: _get_vw(32);
     line-clamp: 2;
+    line-height: _get_vw(16);
     -webkit-line-clamp: 2;
-    height: 66px;
     overflow: hidden;
     text-overflow: ellipsis;
     word-wrap: break-word;
     box-orient: vertical;
     -webkit-box-orient: vertical;
+    @include _mq-up() {
+        line-height: 30px;
+        height: 66px;
+        font-size: 22px;
+        color: #fff;
+    }
     &:link,&:visited {
         text-decoration: underline;
     }
