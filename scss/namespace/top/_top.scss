@@ -2,6 +2,11 @@
 .tp-News {
     display: flex;
     justify-content: space-between;
+    padding: 0 _get_vw(15);
+    flex-wrap: wrap;
+    @include _mq-up() {
+        padding: 0;
+    }
 }
 
 .tp-News_ListContainer {
