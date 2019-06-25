@@ -1,5 +1,5 @@
 .st-Footer {
-
+    padding: 0 _get_vw(15);
 }
 
 .st-Footer_Copyright {
@@ -7,4 +7,5 @@
     font-weight: 600;
     color: #D53829;
     text-align: center;
+    margin-top: _get_vw(4);
 }
