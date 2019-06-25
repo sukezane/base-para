@@ -9,6 +9,9 @@ body.shop {
             height: _get_vw(205);
             margin: 0 _get_vw(15) _get_vw(30);
             width: _get_vw(165);
+            &:nth-child(even) {
+                margin: 0 _get_vw(15) _get_vw(30) 0;
+            }
         }
     }
     .wrapper {
@@ -100,6 +103,8 @@ body#shopTopPage .item {
         line-height: inherit;
         width: auto;
         img {
+            max-height: inherit;
+            max-width: inherit;
             width: _get_vw(165);
             height: _get_vw(165);
             object-fit: cover;
