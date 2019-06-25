@@ -8,7 +8,7 @@
     font-family: "Overpass";
     color: #D53829;
     text-align: center;
-    padding: _get_vw(40) 0 0 0;
+    padding: _get_vw(40) 0 _get_vw(20) 0;
 }
 
 .sw-Product_NewIcon {
@@ -23,4 +23,18 @@
     width: _get_vw(33);
     height: _get_vw(17);
     z-index: _z-index('sw-Product_NewIcon');
+}
+
+.sw-Product_MoreButton {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: _get_vw(14);
+    font-weight: 600;
+    color: #D53829;
+    line-height: 1;
+    letter-spacing: _get_vw(2);
+    border: _get_vw(2) solid #D53829;
+    padding: _get_vw(18) _get_vw(80);
 }
