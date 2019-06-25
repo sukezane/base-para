@@ -11,7 +11,7 @@ body.shop {
             width: _get_vw(165);
             margin: 0 _get_vw(15) _get_vw(30);
             @include _mq-up(){
-                margin: 0 13px;
+                margin: 0 13px 50px;
                 height: 345px;
                 width: 280px;
             }
@@ -129,7 +129,7 @@ body#shopTopPage .item {
         .itemTitle {
             margin: _get_vw(7) 0 _get_vw(3);
             @include _mq-up() {
-                margin: 50px 0 0 0;
+                margin: 9px 0 0 0;
             }
             h2{
                 color: #6A6A6A;
