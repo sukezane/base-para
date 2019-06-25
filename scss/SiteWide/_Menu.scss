@@ -7,14 +7,18 @@
     outline: 0;
     height: _get_vw(47);
     width: 100%;
+    @include _mq-up(){
+        display: none;
+    }
 }
 
 .sw-Menu_Label {
     color: #fff;
     font-size: _get_vw(16);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .sw-Menu_Icon {
-
+    width: _get_vw(8.3);
+    padding-bottom: _get_vw(5.5);
 }
