@@ -68,13 +68,15 @@ body#shopTopPage .item {
     padding: 0;
     &:hover {
         .itemImg {
+            padding: 0;
             border: 0;
         }
     }
     .itemImg {
+        padding: 0;
         height: auto;
         position: relative;
-        .img {
+        img {
             width: _get_vw(165);
             height: _get_vw(165);
             object-fit: cover;
