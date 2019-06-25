@@ -27,6 +27,11 @@
     width: _get_vw(33);
     height: _get_vw(17);
     z-index: _z-index('sw-Product_NewIcon');
+    @include _mq-up() {
+        font-size: 12px;
+        width: 33px;
+        height: 17px;
+    }
 }
 
 .sw-Product_MoreButton {
@@ -41,4 +46,10 @@
     letter-spacing: _get_vw(2);
     border: _get_vw(2) solid #D53829;
     padding: _get_vw(16) _get_vw(78);
+    @include _mq-up() {
+        font-size: 16px;
+        letter-spacing: 2px;
+        border: 3px solid #D53829;
+        padding: 18px 87px;
+    }
 }

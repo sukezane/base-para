@@ -1,5 +1,8 @@
 .st-Footer {
     padding: 0 _get_vw(15);
+    @include _mq-up() {
+        width: 1200px;
+    }
 }
 
 .st-Footer_Copyright {
@@ -9,6 +12,7 @@
     text-align: center;
     margin-top: _get_vw(4);
     @include _mq-up(){
-        
+        font-size: 12px;
+        margin-top: 5px;
     }
 }
