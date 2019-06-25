@@ -2,6 +2,7 @@
 @import "namespace/top/top";
 @import "SiteWide/Menu";
 @import "SiteWide/Product";
+@import "Structure/Footer";
 // override default styles
 body.shop {
     .part4 {
@@ -9,7 +10,7 @@ body.shop {
             height: _get_vw(205);
             margin: 0 _get_vw(15) _get_vw(30);
             width: _get_vw(165);
-            &:nth-child(even) {
+            &:nth-child(odd) {
                 margin: 0 _get_vw(15) _get_vw(30) 0;
             }
         }
@@ -60,6 +61,27 @@ body.shop {
                     }
                     &:hover {
                         border-bottom:0;
+                    }
+                }
+            }
+        }
+    }
+    #mainFooter {
+        .footerMenu {
+            ul {
+                border-top: _get_vw(1) solid #D53829;
+                border-bottom: _get_vw(1) solid #D53829;
+                display: inline-block;
+                width: 100%;
+            }
+            li {
+                margin: _get_vw(22) _get_vw(40);
+                a{
+                    color: #D53829;
+                    font-size: _get_vw(12);
+                    font-weight: 600;
+                    &:hover {
+                        border-bottom: 0;
                     }
                 }
             }
