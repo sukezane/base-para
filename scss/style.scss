@@ -72,10 +72,33 @@ body#shopTopPage .item {
             border: 0;
         }
     }
+    a{
+        .itemTitle {
+            margin: _get_vw(7) 0 _get_vw(3);
+            h2{
+                color: #6A6A6A;
+                font-size: _get_vw(12);
+                font-weight: 600;
+                margin: 0;
+                width: auto;
+                text-align: left;
+            }
+        }
+    }
+    .itemDetail .itemPrice {
+        font-family: "Overpass";
+        font-weight: 600;
+        font-size: _get_vw(14);
+        color: #D53829;
+        text-align: left;
+    }
     .itemImg {
         padding: 0;
         height: auto;
         position: relative;
+        height: auto;
+        line-height: inherit;
+        width: auto;
         img {
             width: _get_vw(165);
             height: _get_vw(165);
