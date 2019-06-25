@@ -7,9 +7,9 @@ body.shop {
         padding: 0;
     }
     .wrapper, .part4 {
-        width: 1200px;
+        width: 100%;
         @include _mq-up(){
-            width: 100%;
+            width: 1200px;
         }
     }
     #shopHeader {
