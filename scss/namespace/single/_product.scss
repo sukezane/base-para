@@ -63,3 +63,16 @@
         border: 2px solid #BFBFBF;
     }
 }
+
+.si-Product_ItemTitle {
+    font-size: _get_vw(20);
+    color: #6A6A6A;
+    margin: _get_vw(15) 0 _get_vw(10);
+}
+
+.si-Product_ItemPrice {
+    font-size: _get_vw(20);
+    font-family: "Overpass";
+    font-weight: 600;
+    color: #D53829;
+}
