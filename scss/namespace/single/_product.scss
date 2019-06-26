@@ -173,7 +173,15 @@
     }
 }
 
-.sg-Product_ItemDescription {
+.sg-Product_ItemDescriptionPc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6A6A6A;
+    line-height: 30px;
+    margin: 20px 0 30px;
+}
+
+.sg-Product_ItemDescriptionSp {
     font-size: _get_vw(16);
     font-weight: 300;
     color: #6A6A6A;
