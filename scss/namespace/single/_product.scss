@@ -3,12 +3,14 @@
     @include _mq-up(){
         width: 1200px;
         margin: auto;
-        padding: 0;
+        padding: 68px 0 0 0;
     }
 }
 
-.sg-Product_Item {
-
+.sg-Product_ItemImg {
+    @include _mq-up() {
+        float: left;
+    }
 }
 
 .sg-Product_ItemImgSlide {
@@ -16,6 +18,9 @@
     border: _get_vw(2) solid #D53829;
     @include _mq-up() {
         border: 3px solid #D53829;
+        overflow: hidden;
+        width: 492px;
+        height: 492px;
     }
 }
 
