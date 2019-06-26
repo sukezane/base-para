@@ -81,13 +81,16 @@
 .sg-Product_PurchaseForm {
     margin: _get_vw(8) 0 0 0;
     label {
-        font-size: _get_vw(14);
+        font-size: _get_vw(16);
     }
     select {
         width: 100%;
         height: _get_vw(50);
         font-size: _get_vw(16);
         font-weight: 600;
+    }
+    .purchaseButton {
+        margin: _get_vw(5) 0 0 0;
     }
     .purchaseButton__btn {
         -webkit-appearance: none;
@@ -120,4 +123,14 @@
             border-right: solid _get_vw(2) #fff;
         }
     }
+}
+
+.sg-Product_ItemDescription {
+    font-size: _get_vw(16);
+    font-weight: 300;
+    color: #6A6A6A;
+    line-height: _get_vw(27);
+    border-top: _get_vw(2) solid #D53829;
+    border-bottom: _get_vw(2) solid #D53829;
+    padding: _get_vw(23) 0 _get_vw(14);
 }
