@@ -1,3 +1,13 @@
 .st-Header {
-    border-bottom: 3px solid #D53829;
+    @include _mq-up() {
+        border-bottom: 3px solid #D53829;
+    }
+}
+
+.st-Header_Title {
+    text-align: center;
+    margin: 0;
+    img {
+        width: _get_vw(150);
+    }
 }

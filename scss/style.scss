@@ -55,9 +55,17 @@ body.shop {
                 margin: 13px 0 5.8px;
                 flex-grow: 0;
             }
+            a{
+                padding: _get_vw(10) 0;
+                @include _mq-up() {
+                    padding: 10px 0;
+                }
+            }
             img {
                 width: 100%;
+                padding: _get_vw(10) 0;
                 @include _mq-up(){
+                    padding: 10px 0;
                     width: auto;
                 }
             }
