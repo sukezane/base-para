@@ -1,8 +1,44 @@
 .st-Footer {
     padding: 0 _get_vw(15);
+    margin: _get_vw(60) auto _get_vw(10);
     @include _mq-up() {
+        margin: 100px auto 20px;
         width: 1200px;
         padding: 0
+    }
+}
+
+.st-Footer_Menu {
+    width: 100%;
+}
+
+.st-Footer_MenuListWrapper {
+    border-top: _get_vw(1) solid #D53829;
+    border-bottom: _get_vw(1) solid #D53829;
+    display: inline-block;
+    width: 100%;
+    @include _mq-up() {
+        border-top: 1px solid #D53829;
+        border-bottom: 1px solid #D53829;
+    }
+}
+
+.st-Footer_MenuList {
+    margin: _get_vw(14) _get_vw(40) _get_vw(14) 0;
+    @include _mq-up(){
+        margin: 30px 36px 30px 8px;
+    }
+}
+
+.st-Footer_MenuLink {
+    color: #D53829;
+    font-size: _get_vw(12);
+    font-weight: 600;
+    &:hover {
+        border-bottom: 0;
+    }
+    @include _mq-up(){
+        font-size: 20px;
     }
 }
 
