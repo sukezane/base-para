@@ -26,6 +26,7 @@
 
 .tp-News_List {
     margin-top: _get_vw(18);
+    list-style: none;
     @include _mq-up(){
         margin-top: 30px;
     }
