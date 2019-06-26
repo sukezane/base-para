@@ -1,8 +1,9 @@
 .st-Header {
-    width: 100%;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
     @include _mq-up() {
+        width: 1200px;
         border-bottom: 3px solid #D53829;
     }
 }
@@ -42,5 +43,32 @@
     padding: _get_vw(10) 0;
     @include _mq-up() {
         padding: 10px 0;
+    }
+}
+
+.st-Header_Nav {
+    align-self: center;
+    border:0;
+    font-family:"Overpass";
+    font-size:24px;
+    display: none;
+    font-weight: bold;
+    margin: 10px 0;
+    @include _mq-up() {
+        display: block;
+    }
+}
+
+.st-Header_NavListWrapper {
+    text-align: right;
+}
+
+.st-Header_NavList {
+    margin: 0;
+    &:nth-child(2) {
+        margin: 0 36px 0 47px;
+    }
+    &:hover {
+        border-bottom:0;
     }
 }
