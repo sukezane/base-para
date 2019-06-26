@@ -1,20 +1,20 @@
-.si-Product {
+.sg-Product {
     padding: _get_vw(30) _get_vw(15) 0;
     @include _mq-up(){
         width: 1200px;
     }
 }
 
-.si-Product_Item {
+.sg-Product_Item {
 
 }
 
-.si-Product_ItemImgSlide {
+.sg-Product_ItemImgSlide {
     position: relative;
     border: _get_vw(2) solid #D53829;
 }
 
-.si-Product_NewIcon {
+.sg-Product_NewIcon {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,17 +32,17 @@
     }
 }
 
-.si-Product_SlideImg {
+.sg-Product_SlideImg {
     list-style: none;
     padding: 0;
 }
 
-.si-Product_SlideImgPager {
+.sg-Product_SlideImgPager {
     list-style: none;
     padding: _get_vw(15) 0 0 0;
 }
 
-.si-Product_SlideImgPagerList {
+.sg-Product_SlideImgPagerList {
     border: _get_vw(2) solid #D53829;
     float: left;
     width: _get_vw(100);
@@ -52,7 +52,7 @@
     }
 }
 
-.si-Product_SlideImgPagerList-noimage {
+.sg-Product_SlideImgPagerList-noimage {
     width: _get_vw(100);
     height: _get_vw(100);
     display: block;
@@ -64,13 +64,14 @@
     }
 }
 
-.si-Product_ItemTitle {
+.sg-Product_ItemTitle {
+    font-weight: 600;
     font-size: _get_vw(20);
     color: #6A6A6A;
     margin: _get_vw(15) 0 _get_vw(10);
 }
 
-.si-Product_ItemPrice {
+.sg-Product_ItemPrice {
     font-size: _get_vw(20);
     font-family: "Overpass";
     font-weight: 600;
