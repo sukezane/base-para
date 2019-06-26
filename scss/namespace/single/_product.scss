@@ -10,6 +10,7 @@
 .sg-Product_Item {
     @include _mq-up() {
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -169,8 +170,10 @@
         line-height: 1;
         padding: _get_vw(23);
         @include _mq-up() {
+            width: 345px;
             font-size: 18px;
             letter-spacing: 2px;
+            padding: 20px;
         }
         &:after {
             content: " ";
@@ -188,7 +191,7 @@
             border-right: solid _get_vw(2) #fff;
             @include _mq-up() {
                 right: 15px;
-                widows: 8px;
+                width: 8px;
                 height: 8px;
                 border-top: solid 2px #fff;
                 border-right: solid 2px #fff;
@@ -238,6 +241,16 @@
     }
 }
 
+.sg-Product_SharePc {
+    display: none;
+    position: relative;
+    @include _mq-up() {
+        padding: 38px 0 0 0;
+        border-top: 3px solid #CCCCCC;
+        display: block;
+    }
+}
+
 .sg-Product_ShareTitle {
     font-size: _get_vw(18);
     font-weight: 600;
@@ -245,10 +258,24 @@
     text-align: center;
 }
 
+.sg-Product_SharePc .sg-Product_ShareTitle {
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+    top: -9px;
+    background: #fff;
+    padding: 4px;
+}
+
 .sg-Product_ShareButtonWrapper {
     margin: _get_vw(14) 0 0 0;
     display: flex;
     justify-content: space-between;
+}
+
+.sg-Product_SharePc .sg-Product_ShareButtonWrapper {
+    margin: 70px 0 0 0;
+    display: block;
 }
 
 .sg-Product_ShareButton {
@@ -260,4 +287,9 @@
     font-weight: 300;
     line-height: _get_vw(20);
     margin: _get_vw(18) 0 0 0;
+    @include _mq-up() {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 24px 0 0 0;
+    }
 }
