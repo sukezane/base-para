@@ -137,3 +137,32 @@
         font-size: 20px;
     }
 }
+
+.sw-Product_soldoutCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.sw-Product_soldoutText {
+    font-weight: 600;
+    color: #D53829;
+    font-size: _get_vw(26);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: _get_vw(36);
+    text-align: center;
+    @include _mq-up() {
+        font-size: 26px;
+        height: 36px;
+    }
+}
