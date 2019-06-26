@@ -77,3 +77,16 @@
     font-weight: 600;
     color: #D53829;
 }
+
+.sg-Product_PurchaseForm {
+    margin: _get_vw(8) 0 0 0;
+    label {
+        font-size: _get_vw(14);
+    }
+    select {
+        width: 100%;
+        height: _get_vw(50);
+        font-size: _get_vw(16);
+        font-weight: 600;
+    }
+}
