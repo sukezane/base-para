@@ -2,6 +2,8 @@
     padding: _get_vw(30) _get_vw(15) 0;
     @include _mq-up(){
         width: 1200px;
+        margin: auto;
+        padding: 0;
     }
 }
 
@@ -12,6 +14,9 @@
 .sg-Product_ItemImgSlide {
     position: relative;
     border: _get_vw(2) solid #D53829;
+    @include _mq-up() {
+        border: 3px solid #D53829;
+    }
 }
 
 .sg-Product_NewIcon {
@@ -40,6 +45,9 @@
 .sg-Product_SlideImgPager {
     list-style: none;
     padding: _get_vw(15) 0 0 0;
+    @include _mq-up() {
+        padding: 20px 0 0 0;
+    }
 }
 
 .sg-Product_SlideImgPagerList {
@@ -47,8 +55,16 @@
     float: left;
     width: _get_vw(100);
     height: _get_vw(100);
+    @include _mq-up() {
+        border: 3px solid #D53829;
+        width: 150px;
+        height: 150px;
+    }
     &:nth-child(2) {
         margin: 0 _get_vw(22);
+        @include _mq-up() {
+            margin: 0 22px;
+        }
     }
 }
 
@@ -60,7 +76,15 @@
     background: #F2F2F2;
     float: left;
     @include _mq-up() {
-        border: 2px solid #BFBFBF;
+        border: 3px solid #BFBFBF;
+        width: 150px;
+        height: 150px;
+    }
+    &:nth-child(2) {
+        margin: 0 _get_vw(22);
+        @include _mq-up() {
+            margin: 0 22px;
+        }
     }
 }
 
@@ -69,6 +93,10 @@
     font-size: _get_vw(20);
     color: #6A6A6A;
     margin: _get_vw(15) 0 _get_vw(10);
+    @include _mq-up() {
+        font-size: 30px;
+        margin: 0 0 10px;
+    }
 }
 
 .sg-Product_ItemPrice {
@@ -76,6 +104,9 @@
     font-family: "Overpass";
     font-weight: 600;
     color: #D53829;
+    @include _mq-up() {
+        font-size: 30px;
+    }
 }
 
 .sg-Product_PurchaseForm {
