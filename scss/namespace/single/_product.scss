@@ -8,3 +8,31 @@
 .si-Product_Item {
 
 }
+
+.si-Product_ItemImgSlide {
+    position: relative;
+    border: _get_vw(2) solid #D53829;
+}
+
+.si-Product_NewIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #D53829;
+    font-size: _get_vw(12);
+    font-weight: 600;
+    font-family: "Overpass";
+    padding: _get_vw(2.5) _get_vw(3.5);
+    line-height: 1;
+    z-index: _z-index('sw-Product_NewIcon');
+    @include _mq-up() {
+        font-size: 12px;
+        padding: 2.5px 3.5px;
+    }
+}
+
+.si-Product_SlideImg {
+    list-style: none;
+    padding: 0;
+}
