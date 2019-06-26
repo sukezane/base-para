@@ -13,6 +13,8 @@
 }
 
 .st-Footer_MenuListWrapper {
+    list-style: none;
+    padding: 0;
     border-top: _get_vw(1) solid #D53829;
     border-bottom: _get_vw(1) solid #D53829;
     display: inline-block;
