@@ -149,12 +149,18 @@
 }
 
 .sg-Product_ShareButtonWrapper {
-    margin: _get_vw(20) 0 0 0;
+    margin: _get_vw(14) 0 0 0;
     display: flex;
     justify-content: space-between;
 }
 
 .sg-Product_ShareButton {
     flex-basis: _get_vw(80);
-    
+}
+
+.sg-Product_Attention {
+    font-size: _get_vw(12);
+    font-weight: 300;
+    line-height: _get_vw(20);
+    margin: _get_vw(18) 0 0 0;
 }
