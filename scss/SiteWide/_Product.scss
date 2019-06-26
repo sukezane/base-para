@@ -59,6 +59,7 @@
     height: _get_vw(205);
     width: _get_vw(165);
     margin: 0 _get_vw(15) _get_vw(30);
+    float: left;
     @include _mq-up(){
         margin: 0 13px 50px;
         height: 345px;
@@ -117,6 +118,11 @@
         margin: 9px 0 0 0;
         font-size: 20px;
     }
+}
+
+.sw-Product_ItemDetail {
+    list-style: none;
+    padding: 0;
 }
 
 .sw-Product_ItemPrice {
