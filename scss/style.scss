@@ -1,5 +1,6 @@
 @import "base/foundation";
 @import "namespace/top/top";
+@import "namespace/product/product";
 @import "SiteWide/Menu";
 @import "SiteWide/Product";
 @import "Structure/Header";
@@ -118,9 +119,12 @@ body#shopTopPage .item {
 
 body#shopDetailPage {
     #mainContent {
-        margin-bottom: 0;
-        padding: 0;
-        width: auto;
+        // margin-bottom: 0;
+        // padding: 0;
+        // width: auto;
+        // .item {
+        //     width: auto;
+        // }
     }
 }
 
