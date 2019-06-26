@@ -132,5 +132,29 @@
     line-height: _get_vw(27);
     border-top: _get_vw(2) solid #D53829;
     border-bottom: _get_vw(2) solid #D53829;
-    padding: _get_vw(23) 0 _get_vw(14);
+    padding: _get_vw(20) 0 _get_vw(10);
+    margin: _get_vw(25) 0 0 0;
+}
+
+.sg-Product_Share {
+    border-bottom: _get_vw(2) solid #D53829;
+    padding: _get_vw(20) 0 _get_vw(30);
+}
+
+.sg-Product_ShareTitle {
+    font-size: _get_vw(18);
+    font-weight: 600;
+    color: #383838;
+    text-align: center;
+}
+
+.sg-Product_ShareButtonWrapper {
+    margin: _get_vw(20) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sg-Product_ShareButton {
+    flex-basis: _get_vw(80);
+    
 }
