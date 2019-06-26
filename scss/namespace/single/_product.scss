@@ -245,6 +245,7 @@
     display: none;
     position: relative;
     @include _mq-up() {
+        margin: 70px 0 0;
         padding: 38px 0 0 0;
         border-top: 3px solid #CCCCCC;
         display: block;
@@ -262,9 +263,9 @@
     position: absolute;
     font-size: 18px;
     left: 0;
-    top: -9px;
+    top: -15px;
     background: #fff;
-    padding: 4px;
+    padding: 0 6px;
 }
 
 .sg-Product_ShareButtonWrapper {
@@ -274,12 +275,19 @@
 }
 
 .sg-Product_SharePc .sg-Product_ShareButtonWrapper {
-    margin: 70px 0 0 0;
+    margin: 0;
     display: block;
 }
 
 .sg-Product_ShareButton {
     flex-basis: _get_vw(80);
+}
+
+.sg-Product_SharePc .sg-Product_ShareButton {
+    display: block;
+    width: 250px;
+    float: left;
+    margin: 0 27px 0 0;
 }
 
 .sg-Product_Attention {
