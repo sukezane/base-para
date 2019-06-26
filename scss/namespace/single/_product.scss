@@ -7,9 +7,21 @@
     }
 }
 
+.sg-Product_Item {
+    @include _mq-up() {
+        display: flex;
+    }
+}
+
 .sg-Product_ItemImg {
     @include _mq-up() {
-        float: left;
+        // float: left;
+    }
+}
+
+.sg-Product_ItemInfo {
+    @include _mq-up() {
+        width: 646px;
     }
 }
 
