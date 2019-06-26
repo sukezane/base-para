@@ -65,20 +65,20 @@
         height: 345px;
         width: 280px;
     }
+    &:nth-child(even) {
+        margin: 0 _get_vw(15) _get_vw(30) 0;
+        @include _mq-up(){
+            margin: 0 13px 50px;
+        }
+    }
     &:first-child {
         @include _mq-up(){
-            margin: 0 13px 0 0;
+            margin: 0 13px 50px 0;
         }
     }
     &:last-child {
         @include _mq-up(){
-            margin: 0 0 0 13px;
-        }
-    }
-    &:nth-child(even) {
-        margin: 0 _get_vw(15) _get_vw(30) 0;
-        @include _mq-up(){
-            margin: 0;
+            margin: 0 0 50px 13px;
         }
     }
 }
