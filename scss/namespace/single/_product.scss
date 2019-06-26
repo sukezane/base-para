@@ -39,10 +39,11 @@
 
 .si-Product_SlideImgPager {
     list-style: none;
-    padding: 0;
+    padding: _get_vw(15) 0 0 0;
 }
 
 .si-Product_SlideImgPagerList {
     float: left;
-    
+    width: _get_vw(100);
+    height: _get_vw(100);
 }
