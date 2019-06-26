@@ -17,7 +17,6 @@
     text-align: center;
     margin: 0;
     flex-grow: 1;
-    margin: _get_vw(20) _get_vw(15);
     @include _mq-up() {
         text-align: left;
         margin: 13px 0 5.8px;
@@ -34,6 +33,10 @@
 }
 
 .st-HeaderTop .st-Header_Title {
+    margin: _get_vw(20) _get_vw(15);
+    @include _mq-up() {
+        margin: 13px 0 5.8px;
+    }
     img {
         width: 100%;
     }
