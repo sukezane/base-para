@@ -43,7 +43,23 @@
 }
 
 .si-Product_SlideImgPagerList {
+    border: _get_vw(2) solid #D53829;
     float: left;
     width: _get_vw(100);
     height: _get_vw(100);
+    &:nth-child(2) {
+        margin: 0 _get_vw(22);
+    }
+}
+
+.si-Product_SlideImgPagerList-noimage {
+    width: _get_vw(100);
+    height: _get_vw(100);
+    display: block;
+    border: _get_vw(2) solid #BFBFBF;
+    background: #F2F2F2;
+    float: left;
+    @include _mq-up() {
+        border: 2px solid #BFBFBF;
+    }
 }
