@@ -1,0 +1,39 @@
+{
+  "name": "sukezane.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukezane/sukezane.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^15.6.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/sukezane/sukezane.github.io/issues"
+  },
+  "homepage": "https://github.com/sukezane/sukezane.github.io#readme"
+}
