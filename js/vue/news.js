@@ -13,7 +13,7 @@ new Vue({
         fetch() {
             Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3').then(res => {
                 console.log(res);
-                this.post.push(res);
+                this.post.push(res.data);
             });
         }
     }
