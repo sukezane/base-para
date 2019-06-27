@@ -173,6 +173,7 @@
         letter-spacing: _get_vw(2);
         line-height: 1;
         padding: _get_vw(23);
+        display: block;
         @include _mq-up() {
             width: 345px;
             font-size: 18px;
