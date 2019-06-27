@@ -1,5 +1,8 @@
 .sw-Product {
-
+    @include _mq-up() {
+        width: 1200px;
+        margin: auto;
+    }
 }
 
 .sw-Product_Headline {
