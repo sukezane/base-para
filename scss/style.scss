@@ -7,34 +7,6 @@
 @import "Structure/Footer";
 // override default styles
 body.shop {
-    .part4 {
-        .part {
-            // height: _get_vw(205);
-            // width: _get_vw(165);
-            // margin: 0 _get_vw(15) _get_vw(30);
-            // @include _mq-up(){
-            //     margin: 0 13px 50px;
-            //     height: 345px;
-            //     width: 280px;
-            // }
-            // &:first-child {
-            //     @include _mq-up(){
-            //         margin: 0 13px 0 0;
-            //     }
-            // }
-            // &:last-child {
-            //     @include _mq-up(){
-            //         margin: 0 0 0 13px;
-            //     }
-            // }
-            // &:nth-child(even) {
-            //     margin: 0 _get_vw(15) _get_vw(30) 0;
-            //     @include _mq-up(){
-            //         margin: 0;
-            //     }
-            // }
-        }
-    }
     .wrapper {
         margin: 0 auto;
         padding: 0;
@@ -48,13 +20,6 @@ body.shop {
 }
 
 body#shopTopPage .item {
-    // padding: 0;
-    // &:hover {
-    //     .itemImg {
-    //         padding: 0;
-    //         border: 0;
-    //     }
-    // }
     a{
         .itemTitle {
             margin: _get_vw(7) 0 _get_vw(3);
@@ -117,14 +82,12 @@ body#shopTopPage .item {
     }
 }
 
-body#shopDetailPage {
-    #mainContent {
-        // margin-bottom: 0;
-        // padding: 0;
-        // width: auto;
-        // .item {
-        //     width: auto;
-        // }
+#privacy, #law {
+    width: auto;
+    padding: _get_vw(30) _get_vw(40) _get_vw(40);
+    @include _mq-up() {
+        width: 960px;
+        padding: 30px 40px 40px;
     }
 }
 

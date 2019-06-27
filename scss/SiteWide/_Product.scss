@@ -16,6 +16,7 @@
 }
 
 .sw-Product_NewIcon {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,16 +25,12 @@
     font-size: _get_vw(12);
     font-weight: 600;
     font-family: "Overpass";
-    // width: _get_vw(33);
-    // height: _get_vw(17);
     padding: _get_vw(2.5) _get_vw(3.5);
     line-height: 1;
     z-index: _z-index('sw-Product_NewIcon');
     @include _mq-up() {
         font-size: 12px;
         padding: 2.5px 3.5px;
-        // width: 33px;
-        // height: 17px;
     }
 }
 
@@ -116,6 +113,9 @@
     font-weight: 600;
     width: auto;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     @include _mq-up() {
         margin: 9px 0 0 0;
         font-size: 20px;
