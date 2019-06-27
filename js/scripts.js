@@ -12,3 +12,12 @@ new Swiper('#swiper-top', {
         clickable: true
     }
 });
+
+fetch('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3',{
+    method: 'GET'
+}).then(res =>{
+    return res.json();
+}).then(res => {
+    console.log(res);
+    
+})

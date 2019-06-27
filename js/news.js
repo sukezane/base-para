@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js/vue/product.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/vue/news.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./js/vue/product.js":
-/*!***************************!*\
-  !*** ./js/vue/product.js ***!
-  \***************************/
+/***/ "./js/vue/news.js":
+/*!************************!*\
+  !*** ./js/vue/news.js ***!
+  \************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: \"#mainContent\",\n  data: {},\n\n  created() {\n    this.fetchPruducts();\n  },\n\n  methods: {\n    fetchPruducts() {\n      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://paragoods.thebase.in/load_items/categories/1803273/1/user_paragoods_5d0c5a11862e1/0', {\n        responseType: 'document'\n      }).then(res => {\n        console.log(res);\n      });\n    }\n\n  }\n});\n\n//# sourceURL=webpack:///./js/vue/product.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: \"#news\",\n  data: {\n    post: []\n  },\n\n  created() {\n    this.fetch();\n  },\n\n  methods: {\n    fetch() {\n      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3').then(res => {\n        console.log(res);\n        this.post.push(res);\n      });\n    }\n\n  }\n});\n\n//# sourceURL=webpack:///./js/vue/news.js?");
 
 /***/ }),
 
