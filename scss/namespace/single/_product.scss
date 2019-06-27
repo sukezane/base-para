@@ -137,12 +137,15 @@
     }
     .purchaseElement {
         position: relative;
+        @include _mq-up() {
+            display: inline-block;
+        }
         &:after {
             content: " ";
             position: absolute;
             margin: auto;
             display: block;
-            top: 0;
+            top: _get_vw(18);
             bottom: 0;
             right: _get_vw(15);
             transform: rotate(135deg);
@@ -152,12 +155,18 @@
             border-top: solid _get_vw(2) #000;
             border-right: solid _get_vw(2) #000;
             @include _mq-up() {
+                top: -12px;
                 right: 15px;
                 width: 8px;
                 height: 8px;
                 border-top: solid 2px #000;
                 border-right: solid 2px #000;
             }
+        }
+    }
+    #amountSelectWrap.purchaseElement {
+        @include _mq-up() {
+            margin-left: 13px;
         }
     }
     label {
