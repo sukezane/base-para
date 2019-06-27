@@ -143,16 +143,43 @@
         }
     }
     select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
         width: 100%;
         height: _get_vw(50);
         font-size: _get_vw(16);
         font-weight: 600;
         border: _get_vw(2) solid #000;
+        position: relative;
         @include _mq-up() {
             width: auto;
             height: 50px;
             font-size: 16px;
             border: 2px solid #000;
+        }
+        &:after {
+            content: " ";
+            position: absolute;
+            margin: auto;
+            display: block;
+            top: 0;
+            bottom: 0;
+            right: _get_vw(15);
+            transform: rotate(135deg);
+            border: 0;
+            width: _get_vw(8);
+            height: _get_vw(8);
+            border-top: solid _get_vw(2) #000;
+            border-right: solid _get_vw(2) #000;
+            @include _mq-up() {
+                right: 15px;
+                width: 8px;
+                height: 8px;
+                border-top: solid 2px #000;
+                border-right: solid 2px #000;
+            }
         }
     }
     .purchaseButton {
