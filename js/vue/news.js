@@ -10,14 +10,6 @@ new Vue({
         this.fetch();
     },
     computed: {
-        formatDate(dateGmt) {
-            const date = new Date(dateGmt);
-            const month =
-              date.getMonth() < 9
-                  ? "0" + (date.getMonth() + 1)
-                  : date.getMonth() + 1;
-            return date.getFullYear() + '.' + month + '.' + date.getDate();
-        }
     },
     methods: {
         fetch() {
@@ -25,6 +17,14 @@ new Vue({
                 console.log(res);
                 this.posts = this.posts.concat(res.data);
             });
+        },
+        formatDate(dateGmt) {
+            const date = new Date(dateGmt);
+            const month =
+              date.getMonth() < 9
+                  ? "0" + (date.getMonth() + 1)
+                  : date.getMonth() + 1;
+            return date.getFullYear() + '.' + month + '.' + date.getDate();
         }
     }
 })
