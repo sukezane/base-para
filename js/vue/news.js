@@ -9,8 +9,6 @@ new Vue({
     created() {
         this.fetch();
     },
-    computed: {
-    },
     methods: {
         fetch() {
             Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3').then(res => {
