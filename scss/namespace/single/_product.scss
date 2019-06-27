@@ -135,30 +135,8 @@
     @include _mq-up() {
         margin: 0;
     }
-    label {
-        font-size: _get_vw(16);
-        @include _mq-up() {
-            font-size: 16px;
-            margin-right: 15px;
-        }
-    }
-    select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        cursor: pointer;
-        width: 100%;
-        height: _get_vw(50);
-        font-size: _get_vw(16);
-        font-weight: 600;
-        border: _get_vw(2) solid #000;
+    .purchaseElement {
         position: relative;
-        @include _mq-up() {
-            width: auto;
-            height: 50px;
-            font-size: 16px;
-            border: 2px solid #000;
-        }
         &:after {
             content: " ";
             position: absolute;
@@ -180,6 +158,30 @@
                 border-top: solid 2px #000;
                 border-right: solid 2px #000;
             }
+        }
+    }
+    label {
+        font-size: _get_vw(16);
+        @include _mq-up() {
+            font-size: 16px;
+            margin-right: 15px;
+        }
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        width: 100%;
+        height: _get_vw(50);
+        font-size: _get_vw(16);
+        font-weight: 600;
+        border: _get_vw(2) solid #000;
+        @include _mq-up() {
+            width: auto;
+            height: 50px;
+            font-size: 16px;
+            border: 2px solid #000;
         }
     }
     .purchaseButton {
