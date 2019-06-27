@@ -58,6 +58,9 @@
 .sg-Product_SlideImg {
     list-style: none;
     padding: 0;
+    a {
+        pointer-events: none;
+    }
 }
 
 .sg-Product_SlideImgPager {
