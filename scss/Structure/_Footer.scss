@@ -26,9 +26,10 @@
 }
 
 .st-Footer_MenuList {
-    margin: _get_vw(14) _get_vw(40) _get_vw(14) 0;
-    float: left;
+    margin: _get_vw(14) _get_vw(40) _get_vw(14);
+    text-align: center;
     @include _mq-up(){
+        float: left;
         margin: 30px 36px 30px 8px;
     }
 }
