@@ -77,7 +77,6 @@
     margin: 0;
     @include _mq-up() {
         font-size:24px;
-        height: 40px;
         line-height: 20px;
         margin: 10px 0;
     }
@@ -109,8 +108,11 @@
 }
 
 .st-Header_NavListButtonIcon {
-    display: inline-block;
-    width: 22px;
+    @include _mq-up() {
+        margin-right: 5px;
+        width: 22px;
+        vertical-align: bottom;
+    }
 }
 
 .st-Header_NavLink {
