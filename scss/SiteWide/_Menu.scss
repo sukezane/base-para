@@ -29,17 +29,23 @@
     flex-basis: 50%;
 }
 
+.sw-Menu_ButtonCartLink {
+    display: block;
+    padding: _get_vw(12);
+}
+
 .sw-Menu_ButtonCartIcon {
     width: _get_vw(12);
+    padding-bottom: _get_vw(2);
 }
 
 .sw-Menu_Label {
     color: #fff;
-    font-size: _get_vw(16);
+    font-size: _get_vw(14);
     font-weight: 600;
 }
 
 .sw-Menu_Icon {
     width: _get_vw(8.3);
-    padding-bottom: _get_vw(5.5);
+    padding-bottom: _get_vw(1);
 }
