@@ -1,5 +1,6 @@
 .sw-Menu {
     display: flex;
+    position: relative;
     @include _mq-up(){
         display: none;
     }
@@ -48,4 +49,37 @@
 .sw-Menu_Icon {
     width: _get_vw(8.3);
     padding-bottom: _get_vw(1);
+}
+
+.sw-Menu_ListWrapper {
+    list-style: none;
+    padding: _get_vw(23) 0 0;
+    position: absolute;
+    top: _get_vw(45);
+    background: #D53829;
+    z-index: _z-index('sw-Menu_ListWrapper');
+    text-align: center;
+}
+
+.sw-Menu_List {
+    margin: 0 0 _get_vw(37);
+}
+
+.sw-Menu_SocialListWrapper {
+    padding: _get_vw(20) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: _get_vw(172);
+}
+
+.sw-Menu_IconTwitter {
+    width: _get_vw(29);
+}
+
+.sw-Menu_IconInstagram {
+    width: _get_vw(29);
+}
+
+.sw-Menu_IconFacebook {
+    width: _get_vw(13);
 }
