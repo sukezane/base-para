@@ -70,6 +70,7 @@
 .sw-Menu_ListLink {
     color: #fff;
     font-size: _get_vw(30);
+    font-weight: 600;
     font-family: 'Overpass';
     @include _on-event() {
         color: #fff;
