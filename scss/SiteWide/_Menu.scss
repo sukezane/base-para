@@ -71,6 +71,9 @@
     color: #fff;
     font-size: _get_vw(30);
     font-family: 'Overpass';
+    @include _on-event() {
+        color: #fff;
+    }
 }
 
 .sw-Menu_SocialListWrapper {
