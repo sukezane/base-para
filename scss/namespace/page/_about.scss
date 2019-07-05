@@ -24,7 +24,7 @@
     margin: _get_vw(30) 0 0;
     @include _mq-up() {
         margin: 55px auto 0;
-        widows: 654px;
+        width: 654px;
     }
 }
 
@@ -36,6 +36,7 @@
     line-height: _get_vw(40);
     letter-spacing: _get_vw(1);
     @include _mq-up() {
+        width: 1000px;
         font-size: 18px;
         line-height: 40px;
         letter-spacing: 1px;
