@@ -11,9 +11,7 @@ new Vue({
     },
     methods: {
         fetch() {
-            Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3').then(res => {
-                this.posts = this.posts.concat(res.data);
-            });
+            Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3').then(res => this.posts = this.posts.concat(res.data));
         },
         formatDate(dateGmt) {
             const date = new Date(dateGmt);
