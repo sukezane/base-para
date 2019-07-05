@@ -8,6 +8,7 @@
 @import "Structure/Footer";
 // override default styles
 body.shop {
+    line-height: inherit;
     .wrapper {
         margin: 0 auto;
         padding: 0;
