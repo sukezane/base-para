@@ -56,15 +56,29 @@
 }
 
 .sw-Menu_ListWrapper {
+    // display: none;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
     list-style: none;
     width: 100%;
-    height: 100vh;
+    height: 0;
     padding: _get_vw(23) 0 0;
     position: absolute;
     top: _get_vw(45);
     background: #D53829;
     z-index: _z-index('sw-Menu_ListWrapper');
     text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.sw-Menu_ListWrapper-active {
+    display: block;
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    background-color: #000;
+    opacity: 1;
+    height: 100vh;
 }
 
 .sw-Menu_List {

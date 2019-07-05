@@ -12,3 +12,8 @@ new Swiper('#swiper-top', {
         clickable: true
     }
 });
+
+$('.sw-Menu_Button').on('click', () => {
+    $('.sw-Menu_ListWrapper').toggleClass('sw-Menu_ListWrapper-active');
+    $('body').toggleClass('is-menu');
+})

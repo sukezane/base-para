@@ -7,6 +7,10 @@
 @import "Structure/Header";
 @import "Structure/Footer";
 // override default styles
+body.is-menu {
+    position: fixed;
+}
+
 body.shop {
     line-height: inherit;
     .wrapper {
