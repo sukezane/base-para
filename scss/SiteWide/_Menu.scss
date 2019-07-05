@@ -67,12 +67,19 @@
     margin: 0 0 _get_vw(37);
 }
 
+.sw-Menu_ListLink {
+    color: #fff;
+    font-size: _get_vw(30);
+    font-family: 'Overpass';
+}
+
 .sw-Menu_SocialListWrapper {
     padding: _get_vw(20) 0 0 0;
     display: flex;
     justify-content: space-between;
     width: _get_vw(172);
     list-style: none;
+    margin: auto;
 }
 
 .sw-Menu_IconTwitter {
