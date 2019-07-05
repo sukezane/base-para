@@ -1,5 +1,8 @@
 .sw-Menu {
-   
+    display: flex;
+    @include _mq-up(){
+        display: none;
+    }
 }
 
 .sw-Menu_Button {
@@ -11,10 +14,23 @@
     border: none;
     outline: 0;
     height: _get_vw(47);
-    width: 100%;
-    @include _mq-up(){
-        display: none;
-    }
+    flex-basis: 50%;
+}
+
+.sw-Menu_ButtonCart {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    background: #000;
+    border: none;
+    outline: 0;
+    height: _get_vw(47);
+    flex-basis: 50%;
+}
+
+.sw-Menu_ButtonCartIcon {
+    width: _get_vw(12);
 }
 
 .sw-Menu_Label {
