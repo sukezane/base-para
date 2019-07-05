@@ -52,7 +52,7 @@
 .st-Header_Link {
     padding: _get_vw(10) 0;
     @include _mq-up() {
-        // padding: 10px 0;
+        padding: 10px 0;
     }
 }
 
@@ -117,7 +117,4 @@
 
 .st-Header_NavLink {
     display: block;
-    @include _mq-up(){
-        padding: 10px;
-    }
 }
