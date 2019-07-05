@@ -93,6 +93,25 @@ body#shopTopPage .item {
     }
 }
 
+.main {
+    width: auto;
+    @include _mq-up() {
+        width: 960px;
+    }
+}
+.inquirySection {
+    padding: _get_vw(20);
+    @include _mq-up() {
+        padding: 60px;
+    }
+    form {
+        width: auto;
+        @include _mq-up() {
+            width: 652px;
+        }
+    }
+}
+
 // swiper
 #swiper-top {
     border: _get_vw(2) solid #D53829;
