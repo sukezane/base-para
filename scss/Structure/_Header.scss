@@ -13,6 +13,16 @@
     }
 }
 
+.st-Header-index {
+    top: _get_vw(-95);
+    transition: all 250ms ease-in-out;
+}
+
+.st-Header-active {
+    top: 0;
+    transition: all 250ms ease-in-out;
+}
+
 .st-Header_Shop {
     display: flex;
     justify-content: space-between;
@@ -39,6 +49,9 @@
 
 .st-Header-top {
     border-bottom: 0;
+    @include _mq-up() {
+        display: none;
+    }
 }
 
 .st-Header-top .st-Header_Title {
