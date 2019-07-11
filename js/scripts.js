@@ -4,8 +4,8 @@ $('.st-Header_MenuButton').on('click', function() {
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
-        $('.st-Header-index').addClass('.st-Header-active');
+        $('.st-Header-index').addClass('st-Header-active');
     } else {
-        $('.st-Header-index').removeClass('.st-Header-active');
+        $('.st-Header-index').removeClass('st-Header-active');
     }
 });
