@@ -119,3 +119,120 @@
 .st-Header_NavLink {
     display: block;
 }
+
+.st-Header_Menu {
+    display: flex;
+    position: relative;
+    @include _mq-up(){
+        display: none;
+    }
+}
+
+.st-Header_MenuButton {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    background: #D53829;
+    border: none;
+    outline: 0;
+    height: _get_vw(47);
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.st-Header_MenuButtonCart {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    background: #000;
+    border: none;
+    outline: 0;
+    height: _get_vw(47);
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.st-Header_MenuButtonCartLink {
+    display: block;
+    padding: _get_vw(12);
+}
+
+.st-Header_MenuButtonCartIcon {
+    width: _get_vw(12);
+    padding-bottom: _get_vw(2);
+}
+
+.st-Header_MenuLabel {
+    color: #fff;
+    font-size: _get_vw(14);
+    font-weight: 600;
+}
+
+.st-Header_MenuIcon {
+    width: _get_vw(8.3);
+    padding-bottom: _get_vw(1);
+}
+
+.st-Header_MenuListWrapper {
+    // display: none;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    list-style: none;
+    width: 100%;
+    height: 0;
+    padding: _get_vw(23) 0 0;
+    position: absolute;
+    top: _get_vw(45);
+    background: #D53829;
+    z-index: _z-index('sw-Menu_ListWrapper');
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.st-Header_MenuListWrapper-active {
+    display: block;
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    height: 100vh;
+}
+
+.st-Header_MenuList {
+    margin: 0 0 _get_vw(37);
+}
+
+.st-Header_MenuListLink {
+    color: #fff;
+    font-size: _get_vw(30);
+    font-weight: 600;
+    font-family: 'Overpass';
+    @include _on-event() {
+        color: #fff;
+    }
+}
+
+.st-Header_MenuSocialListWrapper {
+    padding: _get_vw(20) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: _get_vw(172);
+    list-style: none;
+    margin: auto;
+}
+
+.st-Header_MenuIconTwitter {
+    width: _get_vw(29);
+}
+
+.st-Header_MenuIconInstagram {
+    width: _get_vw(29);
+}
+
+.st-Header_MenuIconFacebook {
+    width: _get_vw(29);
+}
