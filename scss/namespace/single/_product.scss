@@ -1,5 +1,5 @@
 .sg-Product {
-    padding: _get_vw(30) _get_vw(15) 0;
+    padding: _get_vw(125) _get_vw(15) 0;
     @include _mq-up(){
         width: 1200px;
         margin: auto;

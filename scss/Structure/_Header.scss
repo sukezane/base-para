@@ -2,7 +2,12 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: _z-index('st-Header');
     @include _mq-up() {
+        position: static;
         width: 1200px;
         border-bottom: 3px solid #D53829;
     }
