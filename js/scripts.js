@@ -1,3 +1,3 @@
-$('.sw-Menu_Button').on('click', function(){
-    $('.sw-Menu_ListWrapper').toggleClass('sw-Menu_ListWrapper-active');
+$('.st-Header_MenuButton').on('click', function(){
+    $('.st-Header_MenuListWrapper').toggleClass('st-Header_MenuListWrapper-active');
 });
