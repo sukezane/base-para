@@ -37,11 +37,11 @@
     }
 }
 
-.st-Header.st-HeaderTop {
+.st-Header-top {
     border-bottom: 0;
 }
 
-.st-Header.st-HeaderTop .st-Header_Title {
+.st-Header-top .st-Header_Title {
     margin: _get_vw(20) _get_vw(15);
     @include _mq-up() {
         margin: 13px 0 5.8px;
