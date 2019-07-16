@@ -244,6 +244,11 @@
             }
         }
     }
+    .purchaseButton__btn.purchaseButton__btn--noItem {
+        @include _mq-up() {
+            font-size: 16px;
+        }
+    }
 }
 
 .sg-Product_ItemDescriptionPc {
