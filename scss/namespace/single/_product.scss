@@ -355,8 +355,8 @@
 
 .sg-Product_SlideImgFile {
     object-fit: cover;
-    width: _get_vw(100);
-    height: _get_vw(100);
+    width: _get_vw(96);
+    height: _get_vw(96);
     @include _mq-up() {
         width: 144px;
         height: 144px;
