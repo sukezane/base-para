@@ -352,3 +352,13 @@
         margin: 24px 0 0 0;
     }
 }
+
+.sg-Product_SlideImgFile {
+    object-fit: cover;
+    width: _get_vw(100);
+    height: _get_vw(100);
+    @include _mq-up() {
+        width: 144px;
+        height: 144px;
+    }
+}
