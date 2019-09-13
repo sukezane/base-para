@@ -60,6 +60,8 @@
     padding: 0;
     .imgBox {
         background-size: 250%;
+        background-repeat: no-repeat;
+        background-position: center;
         position: relative;
         overflow: hidden;
         @include _mq-up() {
