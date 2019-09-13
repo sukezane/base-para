@@ -12,13 +12,15 @@
 .tp-News_ListContainer {
     flex-grow: 1;
     max-width: 544px;
+    border-bottom: #D53829 _get_vw(2) solid;
     @include _mq-up(){
         background: #D53829;
+        border-bottom: 0;
     }
 }
 
 .tp-News_ListWrapper {
-    padding: _get_vw(15) 0;
+    padding: _get_vw(15) 0 _get_vw(35);
     @include _mq-up(){
         padding: 20px 20px 0 30px;
     }
