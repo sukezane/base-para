@@ -33,7 +33,7 @@
         border: 3px solid #D53829;
         overflow: hidden;
         width: 492px;
-        height: 492px;
+        height: 735px;
     }
 }
 
@@ -72,12 +72,10 @@
 }
 
 .sg-Product_SlideImgPagerList {
-    border: _get_vw(2) solid #D53829;
     float: left;
     width: _get_vw(100);
     height: _get_vw(100);
     @include _mq-up() {
-        border: 3px solid #D53829;
         width: 150px;
         height: 150px;
     }
@@ -358,7 +356,7 @@
     width: _get_vw(96);
     height: _get_vw(96);
     @include _mq-up() {
-        width: 144px;
-        height: 144px;
+        width: 150px;
+        height: 150px;
     }
 }
