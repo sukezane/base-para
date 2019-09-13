@@ -1,5 +1,4 @@
 .sw-Product {
-    margin: _get_vw(95) 0 0;
     @include _mq-up() {
         width: 1200px;
         margin: auto;
@@ -16,6 +15,13 @@
     @include _mq-up(){
         font-size: 40px;
         padding: 60px 0 36px 0;
+    }
+}
+
+.sw-Product_HeadlineStickyHeader {
+    margin: _get_vw(95) 0 0;
+    @include _mq-up() {
+        margin: auto;
     }
 }
 
