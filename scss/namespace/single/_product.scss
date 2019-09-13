@@ -64,6 +64,7 @@
         background-position: center;
         position: relative;
         overflow: hidden;
+        padding-top: _get_vw(515);
         @include _mq-up() {
             padding-top: 729px;
         }
@@ -107,7 +108,9 @@
 .sg-Product_SlideImgPagerList {
     width: _get_vw(100);
     height: _get_vw(100);
+    margin-bottom: _get_vw(20);
     @include _mq-up() {
+        margin-bottom: 20px;
         width: 150px;
         height: 150px;
     }
@@ -373,8 +376,8 @@
 
 .sg-Product_SlideImgFile {
     object-fit: cover;
-    width: _get_vw(96);
-    height: _get_vw(96);
+    width: _get_vw(100);
+    height: _get_vw(100);
     @include _mq-up() {
         width: 150px;
         height: 150px;
