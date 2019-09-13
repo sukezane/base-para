@@ -3,7 +3,7 @@
         width: 1200px;
         margin: auto;
     }
-    .is-sticky {
+    &.is-sticky {
         margin: _get_vw(95) 0 0;
         @include _mq-up() {
             margin: auto;
