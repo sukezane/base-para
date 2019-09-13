@@ -58,6 +58,33 @@
 .sg-Product_SlideImg {
     list-style: none;
     padding: 0;
+    .imgBox {
+        background-size: 150%;
+        position: relative;
+        overflow: hidden;
+        @include _mq-up() {
+            padding-top: 729px;
+        }
+        &:before {
+            background: inherit;
+            filter: blur(0.6rem);
+            content: "";
+            position: absolute;
+            top: -0.6rem;
+            bottom: -0.6rem;
+            left: -0.6rem;
+            right: -0.6rem;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+        }
+    }
     a {
         pointer-events: none;
     }
