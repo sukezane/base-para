@@ -59,7 +59,7 @@
     list-style: none;
     padding: 0;
     .imgBox {
-        background-size: 150%;
+        background-size: 250%;
         position: relative;
         overflow: hidden;
         @include _mq-up() {
