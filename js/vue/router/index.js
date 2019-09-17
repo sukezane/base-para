@@ -20,11 +20,11 @@ const router = new Router({
         name: "About",
         component: About
       },
-      {
-        path: "/:categoryId",
-        name: "Category",
-        component: Category
-      }
+    //   {
+    //     path: "/:categoryId",
+    //     name: "Category",
+    //     component: Category
+    //   }
     ],
     mode: "history",
     base: "",
