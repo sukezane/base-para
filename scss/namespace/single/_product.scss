@@ -64,7 +64,7 @@
         background-position: center;
         position: relative;
         overflow: hidden;
-        padding-top: _get_vw(515);
+        padding-top: _get_vw(509);
         @include _mq-up() {
             padding-top: 726px;
         }
