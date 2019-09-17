@@ -1,6 +1,11 @@
 import Vue from "vue"
 import Router from "vue-router"
 
+import Home from "../components/IndexPage.vue"
+import About from "../components/AboutPage.vue"
+import Category from "../components/CategoryPage.vue"
+
+
 Vue.use(Router)
 
 const router = new Router({
@@ -18,7 +23,7 @@ const router = new Router({
       {
         path: "/:categoryId",
         name: "Category",
-        component: Cateogory
+        component: Category
       }
     ],
     mode: "history",
