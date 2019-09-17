@@ -1,6 +1,9 @@
 <template>
     <div id="main-content">
-        <router-view></router-view>
+        <transition
+        name="page-transition" mode="out-in" appear>
+          <router-view></router-view>
+        </transition>
     </div>
 </template>
 
