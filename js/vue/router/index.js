@@ -49,8 +49,8 @@ Vue.use(Router)
   // またはコンポーネントオプションのオブジェクトでも構いません。
   // ネストされたルートに関しては後で説明します
   const routes = [
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar }
+    { path: '/', component: Foo },
+    { path: '/about', component: Bar }
   ]
   
   // 3. ルーターインスタンスを作成して、ルートオプションを渡します
