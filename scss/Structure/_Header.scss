@@ -13,6 +13,12 @@
     }
 }
 
+.st-Header.st-Header-index {
+    @include _mq-up() {
+        border-bottom: 0;
+    }
+}
+
 .st-Header-index {
     top: _get_vw(-95);
     transition: all 250ms ease-in-out;
