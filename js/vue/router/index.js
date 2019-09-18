@@ -1,12 +1,13 @@
 import Vue from "vue"
-import Router from "vue-router"
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
 
 import Home from "../components/IndexPage.vue"
 import About from "../components/AboutPage.vue"
 import Category from "../components/CategoryPage.vue"
 
 
-Vue.use(Router)
 
 const Foo = { template: '<div>foo</div>' }
 
