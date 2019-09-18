@@ -27,42 +27,45 @@
 <script>
 import Vue from "vue"
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import Axios from "axios";
 Vue.use(VueAwesomeSwiper);
 
 export default {
     components: {
         VueAwesomeSwiper
     },
-    data: {
-        posts: [],
-        swiperOption: {
-            slidesPerView: 1,
-            centeredSlides: true,
-            loop: true,
-            effect: 'fade',
-            autoplay: {
-                delay: 5000,
+    data() {
+        return {
+            posts: [],
+            swiperOption: {
+                slidesPerView: 1,
+                centeredSlides: true,
+                loop: true,
+                effect: 'fade',
+                autoplay: {
+                    delay: 5000,
+                },
+                paginationClickable: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                }
             },
-            paginationClickable: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            }
-        },
-        swiperData: [
-            {
-                url: 'https://sukezane.github.io/img/top-1.jpg'
-            },
-            {
-                url: 'https://sukezane.github.io/img/top-2.jpg'
-            },
-            {
-                url: 'https://sukezane.github.io/img/top-3.jpg'
-            },
-            {
-                url: 'https://sukezane.github.io/img/top-4.jpg'
-            },
-        ]
+            swiperData: [
+                {
+                    url: 'https://sukezane.github.io/img/top-1.jpg'
+                },
+                {
+                    url: 'https://sukezane.github.io/img/top-2.jpg'
+                },
+                {
+                    url: 'https://sukezane.github.io/img/top-3.jpg'
+                },
+                {
+                    url: 'https://sukezane.github.io/img/top-4.jpg'
+                },
+            ]
+        }
     },
     created() {
         this.fetch();
