@@ -1,46 +1,70 @@
 import Vue from "vue"
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
+import Router from "vue-router"
 
 import Home from "../components/IndexPage.vue"
 import About from "../components/AboutPage.vue"
 import Category from "../components/CategoryPage.vue"
 
 
+Vue.use(Router)
 
-const Foo = { template: '<div>foo</div>' }
-
-const router = new VueRouter({
-    routes: [
-      {
-        path: "/",
-        name: "Home",
-        component: Foo
-      },
-      {
-        path: "/about",
-        name: "About",
-        component: About
-      },
+// const router = new Router({
+    // routes: [
+    //   {
+    //     path: "/",
+    //     name: "Home",
+    //     component: Foo
+    //   },
+    //   {
+    //     path: "/about",
+    //     name: "About",
+    //     component: About
+    //   },
     //   {
     //     path: "/:categoryId",
     //     name: "Category",
     //     component: Category
     //   }
-    ],
-    mode: "history",
-    base: "",
+    // ],
+    // mode: "history",
+    // base: "",
 
     // Prevents window from scrolling back to top
     // when navigating between components/views
-    scrollBehavior(to, from, savedPosition) {
-      if (savedPosition) {
-        return savedPosition
-      } else {
-        return { x: 0, y: 0 }
-      }
-    }
+    // scrollBehavior(to, from, savedPosition) {
+    //   if (savedPosition) {
+    //     return savedPosition
+    //   } else {
+    //     return { x: 0, y: 0 }
+    //   }
+    // }
+//   })
+
+  const Foo = { template: '<div>foo</div>' }
+  const Bar = { template: '<div>bar</div>' }
+  
+  // 2. ルートをいくつか定義します
+  // 各ルートは 1 つのコンポーネントとマッピングされる必要があります。
+  // このコンポーネントは実際の `Vue.extend()`、
+  // またはコンポーネントオプションのオブジェクトでも構いません。
+  // ネストされたルートに関しては後で説明します
+  const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar }
+  ]
+  
+  // 3. ルーターインスタンスを作成して、ルートオプションを渡します
+  // 追加のオプションをここで指定できますが、
+  // この例ではシンプルにしましょう
+  const router = new VueRouter({
+    routes // `routes: routes` の短縮表記
   })
+  
+  // 4. root となるインスタンスを作成してマウントします
+  // アプリケーション全体がルーターを認知できるように、
+  // ルーターをインジェクトすることを忘れないでください。
+  const app = new Vue({
+    router
+  }).$mount('#app')
 
 export default router
