@@ -13,13 +13,14 @@
                 </swiper>
             </div>
             <div class="tp-News_ListContainer">
-                <div class="tp-News_List"
-                v-for="post in posts"
-                :key="post.id"
-                >
-                    <p class="tp-News_Date">{{formatDate(post.date_gmt)}}</p>
-    		        <a class="tp-News_Title" v-bind:href="post.link" target="_blank">{{post.title.rendered}}</a>
-                </div>
+                <ul class="tp-News_ListWrapper">
+                    <li class="tp-News_List"
+                    v-for="post in posts"
+                    :key="post.id">
+                        <p class="tp-News_Date">{{formatDate(post.date_gmt)}}</p>
+                        <a class="tp-News_Title" v-bind:href="post.link" target="_blank">{{post.title.rendered}}</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
