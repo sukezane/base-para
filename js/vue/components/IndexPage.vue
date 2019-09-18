@@ -4,7 +4,7 @@
             <div id="swiper-top" class="tp-News_Slider">
                 <swiper :options="swiperOption">
                     <swiper-slide
-                        v-for="slide in SwiperData"
+                        v-for="slide in swiperData"
                         :key="slide.url"
                     >
                         <img :src="slide.url">
