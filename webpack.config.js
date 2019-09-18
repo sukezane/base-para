@@ -5,6 +5,7 @@ module.exports = {
     mode: 'development',
     entry: {
       './app.js': './js/vue/app.js',
+      './home.js': './js/vue/home.js',
     },
     output: {
       path: path.resolve(__dirname, 'js/'),
