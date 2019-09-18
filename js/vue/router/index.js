@@ -34,13 +34,13 @@ const router = new VueRouter({
 
     // Prevents window from scrolling back to top
     // when navigating between components/views
-    // scrollBehavior(to, from, savedPosition) {
-    //   if (savedPosition) {
-    //     return savedPosition
-    //   } else {
-    //     return { x: 0, y: 0 }
-    //   }
-    // }
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition
+      } else {
+        return { x: 0, y: 0 }
+      }
+    }
   })
 
 export default router
