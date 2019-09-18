@@ -49,7 +49,7 @@ Vue.use(Router)
   // またはコンポーネントオプションのオブジェクトでも構いません。
   // ネストされたルートに関しては後で説明します
   const routes = [
-    { path: '/', component: Foo },
+    { path: '/', component: Home },
     { path: '/about', component: Bar }
   ]
   
@@ -63,8 +63,8 @@ Vue.use(Router)
   // 4. root となるインスタンスを作成してマウントします
   // アプリケーション全体がルーターを認知できるように、
   // ルーターをインジェクトすることを忘れないでください。
-  const app = new Vue({
-    router
-  }).$mount('#app')
+//   const app = new Vue({
+//     router
+//   }).$mount('#app')
 
 export default router

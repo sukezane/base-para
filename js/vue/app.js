@@ -2,9 +2,9 @@ import Vue from "Vue"
 
 import router from "./router"
 import App from "./App.vue"
-router
-// new Vue({
-//     el: "#app",
-//     router,
-//     render: h => h(App)
-// })
+
+new Vue({
+    el: "#app",
+    router,
+    render: h => h(App)
+})
