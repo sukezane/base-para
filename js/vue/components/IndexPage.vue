@@ -9,6 +9,7 @@
                     >
                         <img :src="slide.url">
                     </swiper-slide>
+                    <div class="swiper-pagination"  slot="pagination"></div>
                 </swiper>
             </div>
             <div class="tp-News_ListContainer">
@@ -68,8 +69,8 @@ export default {
     mounted() {
       // current swiper instance
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-      console.log('this is current swiper instance object', this.swiper)
-      this.swiper.slideTo(3, 1000, false)
+    //   console.log('this is current swiper instance object', this.swiper)
+    //   this.swiper.slideTo(3, 1000, false)
     },
     computed: {
       swiper() {
