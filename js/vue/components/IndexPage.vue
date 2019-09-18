@@ -83,7 +83,7 @@ export default {
     methods: {
         fetchCategories() {
             const categories = document.getElementById('appsItemCategoryTag').children;
-            for(index = 0; categories.length > index; index++){
+            for(let index = 0; categories.length > index; index++){
                 this.categories.push({
                     name: categories[index].children[0].text,
                     url: categories[index].children[0].getAttribute('href')
