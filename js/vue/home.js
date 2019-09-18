@@ -1,9 +1,8 @@
 import Vue from "Vue"
-import IndexPage from "./components/IndexPage"
+
+import IndexPage from "./components/IndexPage.vue";
 
 new Vue({
-    el: "#app-home",
-    comments: {
-        IndexPage
-    }
+    el: "#app",
+    render: h => h(IndexPage)
 })
