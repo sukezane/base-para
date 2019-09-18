@@ -2,7 +2,7 @@
     <div>
         <div class="tp-News">
             <div id="swiper-top" class="tp-News_Slider">
-                <swiper :options="swiperOption">
+                <swiper :options="swiperOption" ref="mySwiper">
                     <swiper-slide
                         v-for="slide in swiperData"
                         :key="slide.url"
@@ -29,9 +29,6 @@ import Vue from "vue"
 import Axios from "axios";
 
 export default {
-    components: {
-        VueAwesomeSwiper
-    },
     data() {
         return {
             posts: [],
@@ -67,6 +64,17 @@ export default {
     },
     created() {
         this.fetch();
+    },
+    mounted() {
+      // current swiper instance
+      // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
+      console.log('this is current swiper instance object', this.swiper)
+      this.swiper.slideTo(3, 1000, false)
+    },
+    computed: {
+      swiper() {
+        return this.$refs.mySwiper.swiper
+      }
     },
     methods: {
         fetch() {
