@@ -116,7 +116,7 @@ body#shopTopPage .item {
 // swiper
 #swiper-top {
     border: _get_vw(2) solid #D53829;
-    display: inline-block;
+    // display: inline-block;
     @include _mq-up(){
         width: 656px;
         border: 3px solid #D53829;
