@@ -27,7 +27,7 @@ const router = new Router({
       }
     ],
     mode: "history",
-    base: "",
+    // base: "",
 
     // Prevents window from scrolling back to top
     // when navigating between components/views
