@@ -1,7 +1,7 @@
 import Vue from "vue"
 import Router from "vue-router"
 
-import Home from "../components/IndexPage.vue"
+import home from "../components/IndexPage.vue"
 import About from "../components/AboutPage.vue"
 import Category from "../components/CategoryPage.vue"
 
@@ -12,8 +12,8 @@ const router = new Router({
     routes: [
       {
         path: "/",
-        name: "Home",
-        component: About
+        name: "home",
+        component: home
       },
       {
         path: "/about",
