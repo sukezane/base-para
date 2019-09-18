@@ -8,12 +8,14 @@ import Category from "../components/CategoryPage.vue"
 
 Vue.use(Router)
 
+const Foo = { template: '<div>foo</div>' }
+
 const router = new Router({
     routes: [
       {
         path: "/",
         name: "Home",
-        component: Home
+        component: Foo
       },
       {
         path: "/about",
