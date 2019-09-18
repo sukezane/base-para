@@ -26,9 +26,7 @@
 
 <script>
 import Vue from "vue"
-import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Axios from "axios";
-Vue.use(VueAwesomeSwiper);
 
 export default {
     components: {
