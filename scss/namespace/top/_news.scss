@@ -9,6 +9,13 @@
     }
 }
 
+.tp-News_Slider {
+    max-width: _get_vw(345);
+    @include _mq-up() {
+        max-width: initial;
+    }
+}
+
 .tp-News_ListContainer {
     flex-grow: 1;
     max-width: 544px;
