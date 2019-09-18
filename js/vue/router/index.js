@@ -11,7 +11,7 @@ import Category from "../components/CategoryPage.vue"
 
 const Foo = { template: '<div>foo</div>' }
 
-const router = new Router({
+const router = new VueRouter({
     routes: [
       {
         path: "/",
