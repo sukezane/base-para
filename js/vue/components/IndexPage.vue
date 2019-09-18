@@ -61,11 +61,13 @@ export default {
                 {
                     url: 'https://sukezane.github.io/img/top-4.jpg'
                 },
-            ]
+            ],
+            categories: []
         }
     },
     created() {
-        this.fetch();
+        this.fetchPosts();
+        this.fetchCategories();
     },
     mounted() {
       // current swiper instance
@@ -79,7 +81,16 @@ export default {
       }
     },
     methods: {
-        fetch() {
+        fetchCategories() {
+            const categories = document.getElementById('appsItemCategoryTag').children;
+            for(index = 0; categories.length > index; index++){
+                this.categories.push({
+                    name: categories[index].children[0].text,
+                    url: categories[index].children[0].getAttribute('href')
+                })
+            }
+        },
+        fetchPosts() {
             Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=1&per_page=3').then(res => this.posts = this.posts.concat(res.data));
         },
         formatDate(dateGmt) {
