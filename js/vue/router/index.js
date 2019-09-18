@@ -56,7 +56,7 @@ Vue.use(Router)
   // 3. ルーターインスタンスを作成して、ルートオプションを渡します
   // 追加のオプションをここで指定できますが、
   // この例ではシンプルにしましょう
-  const router = new VueRouter({
+  const router = new Router({
     routes // `routes: routes` の短縮表記
   })
   
