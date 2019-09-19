@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Vue */ \"./node_modules/Vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router */ \"./js/vue/router/index.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue */ \"./js/vue/App.vue\");\n\n\n\nnew Vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: \"#app\",\n  router: _router__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\n});\n\n//# sourceURL=webpack:///./js/vue/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Vue */ \"./node_modules/Vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./router */ \"./js/vue/router/index.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue */ \"./js/vue/App.vue\");\n\n\n\nconst vm = new Vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  router: _router__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n}).$mount('#app');\n\n//# sourceURL=webpack:///./js/vue/app.js?");
 
 /***/ }),
 
