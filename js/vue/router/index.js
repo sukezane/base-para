@@ -8,8 +8,6 @@ import About from "../components/AboutPage.vue"
 import Category from "../components/CategoryPage.vue"
 
 
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
 const router = new VueRouter({
     routes: [
       {
@@ -22,11 +20,11 @@ const router = new VueRouter({
         name: "About",
         component: About
       },
-    //   {
-    //     path: "/:categoryId",
-    //     name: "Category",
-    //     component: Category
-    //   }
+      {
+        path: "/:categoryId",
+        name: "Category",
+        component: Category
+      }
     ],
     mode: "history",
     // base: "",
