@@ -1,6 +1,6 @@
 import Vue from "vue"
-import Router from "vue-router"
-Vue.use(Router)
+import VueRouter from "vue-router"
+Vue.use(VueRouter)
 
 
 import Home from "../components/IndexPage.vue"
@@ -10,17 +10,17 @@ import Category from "../components/CategoryPage.vue"
 
 const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
-const router = new Router({
+const router = new VueRouter({
     routes: [
       {
         path: "/",
         name: "Home",
-        component: Foo
+        component: Home
       },
       {
         path: "/about",
         name: "About",
-        component: Bar
+        component: About
       },
     //   {
     //     path: "/:categoryId",
