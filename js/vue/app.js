@@ -3,6 +3,8 @@ import Vue from "Vue"
 import router from "./router"
 import app from "./App.vue"
 
-const vm = new Vue({
-    router
+new Vue({
+    render: h => h(App),
+    router,
+    components: { App }
 }).$mount('#app');
