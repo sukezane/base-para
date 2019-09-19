@@ -7,8 +7,8 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
     el: "#app-home",
     router,
-    components: {
-        IndexPage
-    }
-    // render: h => h(IndexPage)
+    // components: {
+    //     IndexPage
+    // }
+    render: h => h(IndexPage)
 })
