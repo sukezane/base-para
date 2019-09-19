@@ -7,24 +7,25 @@ import Category from "../components/CategoryPage.vue"
 
 
 Vue.use(Router)
-
+const Foo = { template: '<div>foo</div>' }
+const Bar = { template: '<div>bar</div>' }
 const router = new Router({
     routes: [
       {
         path: "/",
         name: "Home",
-        component: Home
+        component: Foo
       },
       {
         path: "/about",
         name: "About",
-        component: About
+        component: Bar
       },
-      {
-        path: "/:categoryId",
-        name: "Category",
-        component: Category
-      }
+    //   {
+    //     path: "/:categoryId",
+    //     name: "Category",
+    //     component: Category
+    //   }
     ],
     mode: "history",
     // base: "",
