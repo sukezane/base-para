@@ -104,7 +104,7 @@ export default {
                     dataType: 'html'
                 }).then( (res) => {
                     console.log(res);
-                    this.categories.unshift({
+                    this.categories.push({
                     id: categoryId,
                     name: categories[index].children[0].text,
                     url: categories[index].children[0].getAttribute('href'),
