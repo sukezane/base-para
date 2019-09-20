@@ -36,36 +36,6 @@
     		    </a>
             </div>
         </div>
-        <div id="new-item" class="sw-Product">
-		    <h2 class="sw-Product_Headline">NEW ITEM</h2>
-		    <div class="clearfix">
-            </div>
-            <div class="u-text-center">
-                <a href="https://paragoods.thebase.in/categories/1803273">
-    		        <button class="sw-Product_MoreButton">新着一覧へ</button>
-    		    </a>
-            </div>
-		</div>
-		<div id="pick-up" class="sw-Product">
-		    <h2 class="sw-Product_Headline">PICK UP</h2>
-		    <div class="clearfix">
-            </div>
-            <div class="u-text-center">
-                <a href="https://paragoods.thebase.in/categories/1803275">
-    		        <button class="sw-Product_MoreButton">一覧へ</button>
-    		    </a>
-            </div>
-		</div>
-		<div id="the-future-magazine" class="sw-Product">
-		    <h2 class="sw-Product_Headline">the future magazine</h2>
-		    <div class="clearfix">
-            </div>
-            <div class="u-text-center">
-                <a href="https://paragoods.thebase.in/categories/1906765">
-    		        <button class="sw-Product_MoreButton">一覧へ</button>
-    		    </a>
-            </div>
-		</div>
     </div>
 </template>
 
@@ -135,7 +105,7 @@ export default {
                     dataType: 'html'
                 }).then( (res) => {
                     console.log(res);
-                    this.categories.push({
+                    this.categories.unshift({
                     id: categoryId,
                     name: categories[index].children[0].text,
                     url: categories[index].children[0].getAttribute('href'),
