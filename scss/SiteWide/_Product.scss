@@ -179,3 +179,9 @@
         border-top: 3px solid #D53829;
     }
 }
+
+.sw-Product-index {
+    .sw-Product_Item:nth-child(n + 5) {
+        display: none;
+    }
+}

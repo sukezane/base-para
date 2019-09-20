@@ -23,7 +23,7 @@
                 </ul>
             </div>
         </div>
-        <div v-for="category in categories" :key="category.id" class="sw-Product">
+        <div v-for="category in categories" :key="category.id" class="sw-Product sw-Product-index">
 		    <h2 class="sw-Product_Headline">{{ category.name }}</h2>
             <div class="clearfix" v-html="category.items">
             </div>
