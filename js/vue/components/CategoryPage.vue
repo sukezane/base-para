@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div>
+        cat page
+    </div>
 </template>
 
 <script>

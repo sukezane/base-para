@@ -28,11 +28,10 @@
             <div class="clearfix" v-html="category.items">
             </div>
             <div class="u-text-center">
-                <a :href=" 'https://paragoods.thebase.in/categories/' + category.id">
-    		        <button v-if="category.name === 'NEW ITEM'" class="sw-Product_MoreButton">新着一覧へ</button>
+                <router-link :to="{ name: 'Category', params: { categoryId: category.id }}">
+                    <button v-if="category.name === 'NEW ITEM'" class="sw-Product_MoreButton">新着一覧へ</button>
     		        <button v-else class="sw-Product_MoreButton">一覧へ</button>
-
-    		    </a>
+                </router-link>
             </div>
         </div>
     </div>
