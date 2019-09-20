@@ -176,6 +176,6 @@
 
 .sw-Product-Category {
     @include _mq-up() {
-        border-bottom: 3px solid #D53829;
+        border-top: 3px solid #D53829;
     }
 }
