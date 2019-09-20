@@ -23,6 +23,19 @@
                 </ul>
             </div>
         </div>
+        <div v-for="category in categories" :key="category.id" class="sw-Product">
+		    <h2 class="sw-Product_Headline">{{ category.name }}</h2>
+            <div class="clearfix">
+                <div v-html="category.item"></div>
+            </div>
+            <div class="u-text-center">
+                <a :href=" 'https://paragoods.thebase.in/categories/' + category.id">
+    		        <button v-if="category.name === 'NEW ITEM'" class="sw-Product_MoreButton">新着一覧へ</button>
+    		        <button v-else class="sw-Product_MoreButton">一覧へ</button>
+
+    		    </a>
+            </div>
+        </div>
         <div id="new-item" class="sw-Product">
 		    <h2 class="sw-Product_Headline">NEW ITEM</h2>
 		    <div class="clearfix">
@@ -117,11 +130,13 @@ export default {
             const categories = document.getElementById('appsItemCategoryTag').children;
             for(let index = 0; categories.length > index; index++){
                 let urlStructure = categories[index].children[0].getAttribute('href').match(/([^\/.]+)/g);
-                Axios.get("https://paragoods.thebase.in/load_items/categories/"+ urlStructure[urlStructure.length - 1] +"/1/user_paragoods_5d0c5a11862e1/0",{
+                const categoryId = urlStructure[urlStructure.length - 1];
+                Axios.get("https://paragoods.thebase.in/load_items/categories/"+ categoryId +"/1/user_paragoods_5d0c5a11862e1/0",{
                     dataType: 'html'
                 }).then( (res) => {
                     console.log(res);
                     this.categories.push({
+                    id: categoryId,
                     name: categories[index].children[0].text,
                     url: categories[index].children[0].getAttribute('href'),
                     items: res.data
