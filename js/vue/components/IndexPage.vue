@@ -29,8 +29,7 @@
             </div>
             <div class="u-text-center">
                 <router-link :to="{ name: 'Category', params: { categoryId: category.id }}">
-                    <button v-if="category.name === 'NEW ITEM'" class="sw-Product_MoreButton">新着一覧へ</button>
-    		        <button v-else class="sw-Product_MoreButton">一覧へ</button>
+                    
                 </router-link>
             </div>
         </div>
