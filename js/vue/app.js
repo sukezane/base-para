@@ -1,8 +1,8 @@
 import Vue from "Vue"
 import VueRouter from "vue-router"
-Vue.use(VueRouter)
-
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+Vue.use(VueRouter)
 Vue.use(VueAwesomeSwiper)
 
 import router from "./router/index"
