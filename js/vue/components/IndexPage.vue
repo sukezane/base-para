@@ -39,7 +39,6 @@
 
 <script>
 import Vue from "vue"
-import Router from "vue-router"
 import Axios from "axios";
 
 export default {
