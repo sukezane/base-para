@@ -124,7 +124,7 @@ export default {
                     this.categories.push({
                     name: categories[index].children[0].text,
                     url: categories[index].children[0].getAttribute('href'),
-                    items: res
+                    items: res.data
                     })
                 });
                 
