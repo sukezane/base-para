@@ -116,7 +116,7 @@ export default {
             
             const categories = document.getElementById('appsItemCategoryTag').children;
             for(let index = 0; categories.length > index; index++){
-                let urlStructure = ategories[index].children[0].getAttribute('href').match(/([^\/.]+)/g);
+                let urlStructure = categories[index].children[0].getAttribute('href').match(/([^\/.]+)/g);
                 Axios.get("https://paragoods.thebase.in/load_items/categories/"+ urlStructure[urlStructure.length - 1] +"/1/user_paragoods_5d0c5a11862e1/0",{
                     dataType: 'html'
                 }).then( (res) => {
