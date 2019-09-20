@@ -25,8 +25,7 @@
         </div>
         <div v-for="category in categories" :key="category.id" class="sw-Product">
 		    <h2 class="sw-Product_Headline">{{ category.name }}</h2>
-            <div class="clearfix">
-                <div v-html="category.item"></div>
+            <div class="clearfix" v-html="category.items">
             </div>
             <div class="u-text-center">
                 <a :href=" 'https://paragoods.thebase.in/categories/' + category.id">
