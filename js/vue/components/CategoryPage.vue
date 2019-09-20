@@ -1,7 +1,7 @@
 <template>
     <div class="sw-Product is-sticky">
         <h2 class="sw-Product_Headline">{{ $route.params.categoryName }}</h2>
-         <div class="clearfix" v-html="this.catgory.items">
+         <div class="clearfix" v-html="this.category.items">
         </div>
     </div>
 </template>
