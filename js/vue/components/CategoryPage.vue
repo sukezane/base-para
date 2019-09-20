@@ -1,5 +1,5 @@
 <template>
-    <div class="sw-Product sw-Product-Category is-sticky">
+    <div :class="{ 'sw-Product-Category' : $route.params.categoryName }" class="sw-Product is-sticky">
         <h2 class="sw-Product_Headline">{{ category.name }}</h2>
          <div class="clearfix" v-html="this.category.items">
         </div>
