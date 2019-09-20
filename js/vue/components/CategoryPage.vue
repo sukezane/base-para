@@ -1,6 +1,6 @@
 <template>
     <div class="sw-Product is-sticky">
-        <h2 class="sw-Product_Headline">{{ $route.params.categoryName }}</h2>
+        <h2 class="sw-Product_Headline">{{ category.name }}</h2>
          <div class="clearfix" v-html="this.category.items">
         </div>
     </div>
@@ -13,6 +13,7 @@ export default {
     data() {
         return {
             category: {
+                name: null,
                 items: null
             }
         }
@@ -26,6 +27,15 @@ export default {
                 dataType: 'html'
             });
             this.category.items = res.data;
+
+            const categories = document.getElementById('appsItemCategoryTag').children;
+            for(let index = 0; categories.length > index; index++){
+                let urlStructure = categories[index].children[0].getAttribute('href').match(/([^\/.]+)/g);
+                const categoryId = urlStructure[urlStructure.length - 1];
+                if (categoryId === this.$route.params.categoryId) {
+                    this.category.name = categories[index].children[0].text;
+                }
+            }
         }
     }
 }
