@@ -93,15 +93,16 @@ export default {
     },
     methods: {
         fetchCategories() {
-            
             const categories = document.getElementById('appsItemCategoryTag').children;
             for(let index = 0; categories.length > index; index++){
+                console.log(categories[index].children[0].text);
+                
                 let urlStructure = categories[index].children[0].getAttribute('href').match(/([^\/.]+)/g);
                 const categoryId = urlStructure[urlStructure.length - 1];
                 Axios.get("https://paragoods.thebase.in/load_items/categories/"+ categoryId +"/1/user_paragoods_5d0c5a11862e1/0",{
                     dataType: 'html'
                 }).then( (res) => {
-                    console.log(res);
+                    // console.log(res);
                     this.categories.push({
                     id: categoryId,
                     name: categories[index].children[0].text,
