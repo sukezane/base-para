@@ -573,7 +573,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n/* harmony de
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data() {\n    return {\n      category: {\n        items: null\n      }\n    };\n  },\n\n  methods: {\n    async fetchCategory() {\n      const res = await Axios.get(\"https://paragoods.thebase.in/load_items/categories/\" + this.$route.params.categoryId + \"/1/user_paragoods_5d0c5a11862e1/0\", {\n        dataType: 'html'\n      });\n      this.category.items = res.data;\n    }\n\n  }\n});\n\n//# sourceURL=webpack:///./js/vue/components/CategoryPage.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data() {\n    return {\n      category: {\n        items: null\n      }\n    };\n  },\n\n  created() {\n    this.fetchCategory();\n  },\n\n  methods: {\n    async fetchCategory() {\n      const res = await Axios.get(\"https://paragoods.thebase.in/load_items/categories/\" + this.$route.params.categoryId + \"/1/user_paragoods_5d0c5a11862e1/0\", {\n        dataType: 'html'\n      });\n      this.category.items = res.data;\n    }\n\n  }\n});\n\n//# sourceURL=webpack:///./js/vue/components/CategoryPage.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 

@@ -15,6 +15,9 @@ export default {
             }
         }
     },
+    created() {
+        this.fetchCategory();
+    },
     methods: {
         async fetchCategory() {
             const res = await Axios.get("https://paragoods.thebase.in/load_items/categories/"+ this.$route.params.categoryId +"/1/user_paragoods_5d0c5a11862e1/0",{
