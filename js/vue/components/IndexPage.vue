@@ -58,20 +58,6 @@ export default {
                     clickable: true
                 }
             },
-            // swiperData: [
-            //     {
-            //         url: 'https://sukezane.github.io/img/top-1.jpg'
-            //     },
-            //     {
-            //         url: 'https://sukezane.github.io/img/top-2.jpg'
-            //     },
-            //     {
-            //         url: 'https://sukezane.github.io/img/top-3.jpg'
-            //     },
-            //     {
-            //         url: 'https://sukezane.github.io/img/top-4.jpg'
-            //     },
-            // ],
             categories: []
         }
     },
