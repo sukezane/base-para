@@ -4,6 +4,7 @@
             <div id="swiper-top" class="tp-News_Slider">
                 <swiper :options="swiperOption" ref="mySwiper">
                     <swiper-slide
+                        v-for="post in posts"
                         :key="post.id"
                     >
 
