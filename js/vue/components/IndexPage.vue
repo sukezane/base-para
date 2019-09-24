@@ -7,7 +7,7 @@
                         v-for="post in posts"
                         :key="post.id"
                     >
-                        <img :src="post['_embedded']['wp:featuredmedia'][0].link" />
+                        <img :src="post['_embedded']['wp:featuredmedia'][0].source_url" />
                     </swiper-slide>
                     <div class="swiper-pagination"  slot="pagination"></div>
                 </swiper>
