@@ -4,10 +4,9 @@
             <div id="swiper-top" class="tp-News_Slider">
                 <swiper :options="swiperOption" ref="mySwiper">
                     <swiper-slide
-                        v-for="slide in swiperData"
-                        :key="slide.url"
+                        :key="post.id"
                     >
-                        <img :src="slide.url">
+
                     </swiper-slide>
                     <div class="swiper-pagination"  slot="pagination"></div>
                 </swiper>
@@ -108,7 +107,7 @@ export default {
             }
         },
         fetchPosts() {
-            Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?category=3665&per_page=3').then(res => this.posts = this.posts.concat(res.data));
+            Axios.get('https://mag.digle.tokyo/wp-json/wp/v2/posts?_embed&category=3665&per_page=3').then(res => this.posts = this.posts.concat(res.data));
         },
         formatDate(dateGmt) {
             const date = new Date(dateGmt);
